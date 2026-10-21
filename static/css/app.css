@@ -28,3 +28,4 @@ details>summary{cursor:pointer;font-weight:600;padding:4px 0}
 @media print{.top,.noprint,.flash{display:none!important}body{background:#fff}main{margin:0;max-width:none}.card{border:0;padding:0}}
 
 th{background:#eef1f5}.card h1{margin-top:0}.subtitle{color:var(--muted);margin-top:0}.login-choice{display:block;border:1px solid var(--line);border-radius:10px;padding:12px;margin:8px 0;text-decoration:none;color:inherit}.login-choice:hover{border-color:var(--teal);background:#f5fafc}.login-choice b{display:block;color:var(--navy)}
+.brand-logo{height:36px;width:auto;border-radius:4px}.logos{display:flex;justify-content:center;align-items:center;gap:22px;margin-bottom:12px}.logos img{max-height:90px;max-width:150px;object-fit:contain}

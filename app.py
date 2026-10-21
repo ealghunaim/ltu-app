@@ -70,7 +70,9 @@ def create_app(config=None):
     @app.context_processor
     def _ctx():
         return dict(ROLE_LABELS=ROLE_LABELS, CANDIDATE_STATUS=CANDIDATE_STATUS, DECISIONS=DECISIONS, CASE_TYPES=CASE_TYPES,
-                    REFERRAL_STATUS=REFERRAL_STATUS, idle_seconds=int(app.config["SESSION_IDLE_MINUTES"] * 60), today=date.today(), main_app_url=(app.config.get("MAIN_APP_URL") or ""))
+                    REFERRAL_STATUS=REFERRAL_STATUS, idle_seconds=int(app.config["SESSION_IDLE_MINUTES"] * 60), today=date.today(), main_app_url=(app.config.get("MAIN_APP_URL") or ""),
+                    has_ltu_logo=os.path.isfile(os.path.join(app.static_folder, "images", "ltu_logo.png")),
+                    has_thoracic_logo=os.path.isfile(os.path.join(app.static_folder, "images", "thoracic_logo.jpg")))
 
     @app.errorhandler(403)
     def _403(e):

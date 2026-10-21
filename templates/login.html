@@ -1,5 +1,5 @@
 {% extends "base.html" %}{% block content %}
-<div class="auth-card card"><h1>Lung Transplant Unit</h1><p class="subtitle">Chest Diseases Hospital - Kuwait Ministry of Health</p>
+<div class="auth-card card"><div class="logos">{% if has_ltu_logo %}<img src="{{ url_for('static', filename='images/ltu_logo.png') }}" alt="Kuwait Lung Transplant Team">{% endif %}{% if has_thoracic_logo %}<img src="{{ url_for('static', filename='images/thoracic_logo.jpg') }}" alt="Thoracic Surgery">{% endif %}</div><h1>Lung Transplant Unit</h1><p class="subtitle">Chest Diseases Hospital - Kuwait Ministry of Health</p>
 <form method="post"><label>Email</label><input type="email" name="email" required autofocus><label>Password</label><input type="password" name="password" required>
 <p><button class="btn">Log in</button></p></form></div>
 <div class="auth-card card" style="margin-top:-30px"><h2>New here?</h2>
