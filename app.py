@@ -70,7 +70,7 @@ def create_app(config=None):
     @app.context_processor
     def _ctx():
         return dict(ROLE_LABELS=ROLE_LABELS, CANDIDATE_STATUS=CANDIDATE_STATUS, DECISIONS=DECISIONS, CASE_TYPES=CASE_TYPES,
-                    REFERRAL_STATUS=REFERRAL_STATUS, idle_seconds=int(app.config["SESSION_IDLE_MINUTES"] * 60), today=date.today())
+                    REFERRAL_STATUS=REFERRAL_STATUS, idle_seconds=int(app.config["SESSION_IDLE_MINUTES"] * 60), today=date.today(), main_app_url=(app.config.get("MAIN_APP_URL") or ""))
 
     @app.errorhandler(403)
     def _403(e):

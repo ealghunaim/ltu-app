@@ -1,4 +1,11 @@
 {% extends "base.html" %}{% block content %}
-<div class="card" style="max-width:480px;margin:30px auto"><h1>Referring physician registration</h1><p class="muted">For physicians at MOH hospitals referring adult (&ge;18) lung transplant candidates. The LTU team approves each account.</p>
-<form method="post"><label>Full name</label><input name="full_name" required><label>Hospital / institution</label><input name="hospital" required><label>Email</label><input type="email" name="email" required>
-<label>Phone</label><input name="phone"><label>Password (8+ characters)</label><input type="password" name="password" minlength="8" required><p><button class="btn">Register</button> <a href="{{ url_for('auth.login') }}">Back to sign in</a></p></form></div>{% endblock %}
+<div class="auth-card card" style="max-width:500px"><h1>{{ 'Referring physician sign-up' if kind=='referrer' else 'LTU team sign-up' }}</h1>
+<p class="subtitle">{% if kind=='referrer' %}For physicians referring adult (&ge;18) lung transplant candidates.{% else %}For Lung Transplant Unit staff. Your role is confirmed when the account is approved.{% endif %} <a href="{{ url_for('auth.register', kind='team' if kind=='referrer' else 'referrer') }}">{{ 'I am LTU staff' if kind=='referrer' else 'I am a referring physician' }}</a></p>
+<form method="post"><input type="hidden" name="kind" value="{{ kind }}">
+<label>Full name</label><input name="full_name" required>
+{% if kind=='referrer' %}<label>Hospital / institution</label><input name="hospital" required>
+{% else %}<label>Role</label><select name="role" required>{% for k, l in team_roles %}<option value="{{ k }}">{{ l }}</option>{% endfor %}</select>
+<label>Department / unit (optional)</label><input name="hospital" value="CDH">{% endif %}
+<label>Email</label><input type="email" name="email" required><label>Phone</label><input name="phone">
+<label>Password (8+ characters)</label><input type="password" name="password" minlength="8" required>
+<p><button class="btn">Create account</button> <a class="btn sec" href="{{ url_for('auth.login') }}">Back to log in</a></p></form></div>{% endblock %}

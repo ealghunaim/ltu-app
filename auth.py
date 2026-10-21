@@ -53,23 +53,33 @@ def logout():
 
 @auth_bp.route("/register", methods=["GET", "POST"])
 def register():
-    """Referring physicians (MOH hospital hubs) self-register; LTU staff accounts are created by an admin."""
+    """Self sign-up for referring physicians and LTU team members. Every account is pending until approved."""
+    kind = request.values.get("kind", "referrer")
+    kind = kind if kind in ("referrer", "team") else "referrer"
+    team_roles = [(k, l) for k, l in ROLE_LABELS.items() if k not in (ROLE_REFERRING, "admin", "medical_director", "surgical_director")]
     if request.method == "POST":
         f = request.form
         email = f.get("email", "").strip().lower()
-        if not (f.get("full_name", "").strip() and email and len(f.get("password", "")) >= 8 and f.get("hospital", "").strip()):
-            flash("Name, hospital, email and a password of at least 8 characters are required.", "error")
+        hospital = f.get("hospital", "").strip()
+        role = ROLE_REFERRING
+        if kind == "team":
+            role = f.get("role")
+            hospital = hospital or "CDH"
+        if kind == "team" and role not in dict(team_roles):
+            flash("Choose a valid role.", "error")
+        elif not (f.get("full_name", "").strip() and email and len(f.get("password", "")) >= 8 and hospital):
+            flash("Name, " + ("hospital" if kind == "referrer" else "role") + ", email and a password of at least 8 characters are required.", "error")
         elif User.query.filter_by(email=email).first():
             flash("An account with that email already exists.", "error")
         else:
-            u = User(full_name=f["full_name"].strip(), email=email, role=ROLE_REFERRING, hospital=f["hospital"].strip(),
+            u = User(full_name=f["full_name"].strip(), email=email, role=role, hospital=hospital,
                      phone=f.get("phone", "").strip(), status=USER_PENDING)
             u.set_password(f["password"])
             db.session.add(u)
             db.session.commit()
-            flash("Registered. The LTU team will approve your account; you will then be able to sign in and submit referrals.", "success")
+            flash("Account created. The LTU team will approve it, after which you can log in.", "success")
             return redirect(url_for("auth.login"))
-    return render_template("register.html")
+    return render_template("register.html", kind=kind, team_roles=team_roles)
 
 
 @auth_bp.route("/password", methods=["GET", "POST"])

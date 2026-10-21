@@ -8,7 +8,7 @@ load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 def _db_url():
     url = os.environ.get("DATABASE_URL", "").strip()
-    for prefix in ("postgres://", "postgresql://"):
+    for prefix in ("postgres://", "postgresql://"):  # force the psycopg (v3) driver
         if url.startswith(prefix):
             url = "postgresql+psycopg://" + url[len(prefix):]
             break

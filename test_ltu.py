@@ -47,6 +47,19 @@ check("referrer blocked from patients", ref.get("/patients").status_code == 403)
 check("referrer blocked from episodes", ref.get("/episodes").status_code == 403)
 check("referrer blocked from audit", ref.get("/audit").status_code in (403, 302))
 
+# --- team self sign-up
+tm = client()
+check("login page offers both sign-ups", b"LTU team member" in tm.get("/login").data and b"Referring physician" in tm.get("/login").data)
+check("team register page", b"Role" in tm.get("/register?kind=team").data)
+r = tm.post("/register", data={"kind": "team", "full_name": "Dr Anaes", "role": "anaesthesiologist", "email": "an@x.org", "password": "Passw0rd!!"}, follow_redirects=True)
+check("team signup ok", r.status_code == 200 and b"approve" in r.data)
+r = login(tm, "an@x.org", "Passw0rd!!"); check("team pending cannot use app", tm.get("/patients").status_code in (302, 401, 403))
+r = tm.post("/register", data={"kind": "team", "full_name": "Evil", "role": "admin", "email": "ev@x.org", "password": "Passw0rd!!"}, follow_redirects=True)
+with app.app_context(): check("cannot self-register as admin", User.query.filter_by(email="ev@x.org").first() is None)
+with app.app_context(): au = User.query.filter_by(email="an@x.org").first(); check("team user pending w/ role", au.status == "pending" and au.role == "anaesthesiologist"); auid = au.id
+admin.post(f"/users/{auid}/update", data={"action": "approve"})
+login(tm, "an@x.org", "Passw0rd!!"); check("approved team user in", tm.get("/patients").status_code == 200)
+
 # --- referral: minor rejected, adult ok
 base = {"civil_id": "290010100001", "full_name": "Test Patient", "sex": "Male", "primary_diagnosis": "IPF", "reason": "End-stage ILD"}
 r = ref.post("/referrals/new", data={**base, "civil_id": "311010100002", "full_name": "Kid", "date_of_birth": (date.today() - timedelta(days=365 * 10)).isoformat()})

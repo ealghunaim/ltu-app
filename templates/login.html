@@ -1,5 +1,8 @@
 {% extends "base.html" %}{% block content %}
-<div class="card" style="max-width:420px;margin:50px auto"><h1>Lung Transplant Unit</h1><p class="muted">Chest Diseases Hospital - Kuwait MOH</p>
+<div class="auth-card card"><h1>Lung Transplant Unit</h1><p class="subtitle">Chest Diseases Hospital - Kuwait Ministry of Health</p>
 <form method="post"><label>Email</label><input type="email" name="email" required autofocus><label>Password</label><input type="password" name="password" required>
-<p><button class="btn">Sign in</button></p></form>
-<p class="muted" style="font-size:13px">Referring physician at an MOH hospital? <a href="{{ url_for('auth.register') }}">Register to submit referrals</a>.</p></div>{% endblock %}
+<p><button class="btn">Log in</button></p></form></div>
+<div class="auth-card card" style="margin-top:-30px"><h2>New here?</h2>
+<a class="login-choice" href="{{ url_for('auth.register', kind='referrer') }}"><b>Referring physician</b>Submit lung transplant referrals from your hospital and receive the MDT decision.</a>
+<a class="login-choice" href="{{ url_for('auth.register', kind='team') }}"><b>LTU team member</b>Transplant physicians, surgeons, anaesthesia, ICU, ID, pharmacy, coordinators and allied health.</a>
+<p class="muted" style="font-size:13px">All new accounts are reviewed and approved by the LTU team before first sign-in.</p></div>{% endblock %}

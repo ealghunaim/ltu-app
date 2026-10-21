@@ -3,7 +3,7 @@
 <title>{% block title %}Lung Transplant Unit{% endblock %} - CDH LTU</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"></head><body>
 {% if current_user.is_authenticated %}
-<div class="top"><span class="brand">&#129727; CDH Lung Transplant Unit</span>
+<div class="top"><a href="{{ url_for('main.dashboard') }}" class="brand">CDH Lung Transplant Unit</a>
   <a href="{{ url_for('main.dashboard') }}" class="{{ 'on' if request.endpoint=='main.dashboard' }}">Home</a>
   {% if current_user.is_team %}
   <a href="{{ url_for('patients.search') }}">Patients</a><a href="{{ url_for('referrals.listing') }}">Referrals</a><a href="{{ url_for('mdt.listing') }}">MDT</a>
@@ -12,7 +12,7 @@
   <a href="{{ url_for('protocols.library') }}">Protocols</a>
   {% if current_user.can_manage_users %}<a href="{{ url_for('auth.users') }}">Users</a>{% endif %}
   {% if current_user.role == 'admin' %}<a href="{{ url_for('main.audit_log') }}">Audit</a>{% endif %}
-  <span class="sp"></span><span style="font-size:13px;color:#cfe1ec">{{ current_user.full_name }}</span>
+  <span class="sp"></span>{% if main_app_url and current_user.is_team %}<a class="pill" href="{{ main_app_url }}" target="_blank" rel="noopener">Thoracic Surgery app</a>{% endif %}<span style="font-size:13px;color:#cfe1ec">{{ current_user.full_name }}</span>
   <a href="{{ url_for('auth.change_password') }}">Password</a><a href="{{ url_for('auth.logout') }}">Sign out</a></div>
 {% endif %}
 <main>
