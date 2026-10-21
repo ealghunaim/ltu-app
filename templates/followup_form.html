@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% from "_form.html" import section %}{% block content %}
+<h1>Follow-up visit - <a href="{{ url_for('patients.detail', pid=p.id) }}">{{ p.full_name }}</a></h1>
+<p class="muted">{% if ep %}Transplanted {{ ep.transplant_date }} ({{ months }} months). {% else %}No transplant recorded (boarded patient? record the transplant episode first).{% endif %}Visit type: <b>{{ visit_types|selectattr(0,'equalto',vtype)|map(attribute=1)|first }}</b>
+{% if not fu %}- change: {% for k, l in visit_types %}<a href="?type={{ k }}">{{ l }}</a> {% endfor %}{% endif %}</p>
+<form method="post" action="{{ url_for('followups.view', fid=fu.id) if fu else url_for('followups.new', pid=p.id, type=vtype) }}">
+<div class="card"><h2>Visit</h2><div class="ff"><div><label>Visit date</label><input type="date" name="visit_date" value="{{ fu.visit_date if fu else today.isoformat() }}"></div>
+<div><label>FEV1 (L)</label><input type="number" step="any" name="fev1_l" value="{{ fu.fev1_l if fu and fu.fev1_l is not none else '' }}"></div>
+<div><label>FEV1 (% pred)</label><input type="number" step="any" name="fev1_pct" value="{{ fu.fev1_pct if fu and fu.fev1_pct is not none else '' }}"></div>
+<div><label>FVC (L)</label><input type="number" step="any" name="fvc_l" value="{{ fu.fvc_l if fu and fu.fvc_l is not none else '' }}"></div>
+<div><label>Tacrolimus trough (ng/mL)</label><input type="number" step="any" name="tacrolimus" value="{{ fu.tacrolimus if fu and fu.tacrolimus is not none else '' }}"></div>
+<div><label>Creatinine (umol/L)</label><input type="number" step="any" name="creatinine" value="{{ fu.creatinine if fu and fu.creatinine is not none else '' }}"></div>
+<div><label>Next visit date</label><input type="date" name="next_visit_date" value="{{ fu.next_visit_date or '' if fu else '' }}"></div></div></div>
+{% for key, title, fields in sections %}{{ section(key, title, fields, state.get(key, {})) }}{% endfor %}
+<p><button class="btn">Save visit</button></p></form>{% endblock %}

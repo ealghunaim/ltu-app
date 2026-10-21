@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% from "_form.html" import ro_section %}{% block content %}
+<h1>Referral - {{ r.patient.full_name }}</h1>
+<p><span class="tag {{ 't-green' if r.status=='decided' else 't-amber' }}">{{ REFERRAL_STATUS[r.status] }}</span> <span class="muted">{{ r.institution }} - {{ r.referring_physician }} - {{ r.referral_date }}</span></p>
+<div class="card"><h2>Patient</h2>{{ r.patient.full_name }} - Civil ID {{ r.patient.civil_id }}{% if r.patient.age is not none %} - {{ r.patient.age }}y{% endif %} {{ r.patient.sex or '' }} {% if current_user.is_team %}<a class="btn sm sec" href="{{ url_for('patients.detail', pid=r.patient_id) }}">Open patient file</a>{% endif %}
+<h3 style="margin-top:10px">Primary diagnosis</h3><p>{{ r.primary_diagnosis }}</p><h3>Reason for referral</h3><p>{{ r.reason }}</p>
+{% for key, title, fields in sections %}{{ ro_section(key, title, fields, data) }}{% endfor %}</div>
+{% if mdt %}<div class="card"><h2>MDT decision</h2><p><span class="tag t-blue">{{ DECISIONS[mdt.decision] }}</span> MDT {{ mdt.mdt_date }} - chair {{ mdt.chair_name }}</p>
+<a class="btn sec" href="{{ url_for('referrals.letter', rid=r.id) }}" target="_blank">Printable decision letter</a></div>{% endif %}
+{% if current_user.is_team %}<div class="card noprint"><h2>Actions</h2>
+<form method="post" action="{{ url_for('referrals.status', rid=r.id) }}" style="display:inline"><select name="status" style="width:auto">{% for k, l in REFERRAL_STATUS.items() %}<option value="{{ k }}" {{ 'selected' if r.status==k }}>{{ l }}</option>{% endfor %}</select> <button class="btn sm sec">Set status</button></form>
+<a class="btn sm" href="{{ url_for('mdt.new', patient_id=r.patient_id, referral_id=r.id) }}">Present at MDT</a>
+{% if mdt and not r.decision_sent_at %}<form method="post" action="{{ url_for('referrals.status', rid=r.id) }}" style="display:inline"><input type="hidden" name="mark_sent" value="1"><button class="btn sm">Mark written decision as sent to referrer</button></form>{% elif r.decision_sent_at %}<span class="tag t-green">Decision communicated {{ r.decision_sent_at.strftime('%d %b %Y') }}</span>{% endif %}</div>{% endif %}{% endblock %}

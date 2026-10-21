@@ -1,0 +1,210 @@
+CDH Lung Transplant Unit — Post-operative Orders                                          CONFIDENTIAL — Physician Order Record
+
+
+  CHEST DISEASES HOSPITAL | LUNG TRANSPLANT UNIT                                               Ref: CDH-LTU-PPO-03
+                                                                                               Version 1.0 | April 2026
+  Post-operative Lung Transplant Orders
+  Cardiothoracic ICU — Immediate Post-operative Order Set
+
+
+ Patient Name:                   MRN / Civil ID:                  Date:                            Time:
+
+
+ Weight (kg):                    Allergies:                       Procedure Type:                  Surgeon:
+
+
+
+
+ Procedure                       ☐ ☐ Right Single Lung Transplant
+                                 ☐ ☐ Left Single Lung Transplant
+                                 ☐ ☐ Bilateral Sequential Lung Transplant
+ ECMO/CPB Used                   ☐ ☐ No bypass used
+                                 ☐ ☐ VA-ECMO (intraoperative; decannulated)
+                                 ☐ ☐ VA-ECMO continuing to ICU
+                                 ☐ ☐ CPB used
+
+
+ 1. ADMISSION & ISOLATION
+ ☐    Admit to: Cardiothoracic ICU — STRICT ISOLATION room. Single-room isolation mandatory.
+
+ ☐    Notify: Transplant Coordinator, Transplant Physician on call, Respiratory Therapy, Physiotherapy.
+
+ ☐    Diagnosis: Lung Transplant — Post-operative Day 0. Refer to CDH-LTU-PERIOP-02 for full pathway.
+
+
+ 2. HAEMODYNAMICS & FLUID MANAGEMENT (KEEP DRY)
+  CRITICAL Target negative fluid balance. CVP <8 mmHg. Prefer vasopressors over fluid boluses for MAP support.
+  Avoid fluid overload — directly worsens Primary Graft Dysfunction.
+
+ ☐    Vital Signs & Monitoring                     ☐    Continuous HR, Art-line BP, CVP, SpO₂. Q1h neuro checks.
+                                                        Temperature q4h.
+        Haemodynamic Target                        Goal                                     Intervention
+ Mean Arterial Pressure                       65–80 mmHg          ☐ Norepinephrine infusion (first-line). Start at 0.05
+                                                                  µg/kg/min; titrate. ☐ Epinephrine if refractory RV failure (per
+                                                                  ICU physician).
+ Central Venous Pressure                      <8 mmHg             ☐ D5W at 30 mL/hr to KVO (maintenance). ☐ Furosemide
+                                                                  (Lasix) _______ mg IV q _______ hrs.
+
+
+ 3. RESPIRATORY & VENTILATOR MANAGEMENT
+          Parameter                    Mode             TV (mL/kg IBW)        PEEP (cmH₂O)                        FiO₂
+ Initial Settings                                       6 mL/kg              5–8                   Lowest to maintain SpO₂
+                                                                                                   ≥94%
+
+ ☐    ☐ ABG q4h AND 30 minutes after any ventilator change.
+
+ ☐    ☐ Aggressive pulmonary toilet: in-line suctioning PRN. Chest physiotherapy q4h while intubated.
+
+ ☐    ☐ Extubation: wean per ICU protocol when awake, haemodynamically stable, and ABG acceptable. Target within 12–
+      24 hours.
+
+ ☐    ☐ Post-extubation: incentive spirometry Q1H while awake.
+
+
+
+                                      Form Ref: CDH-LTU-PPO-03 | Kuwait MOH | Page 1 of 4
+CDH Lung Transplant Unit — Post-operative Orders                                       CONFIDENTIAL — Physician Order Record
+
+
+ ☐     ☐ Bronchoscopy: routine bedside bronchoscopy Day 1 post-operatively (inspect anastomoses, clear secretions).
+       Document findings.
+
+
+ 4. IMMUNOSUPPRESSION — CRITICAL TIMING
+  🚨 CRITICAL Immunosuppression timing is CRITICAL. Administer all agents at specified times. Document batch,
+  dose, route, and exact time for every immunosuppressant administered.
+             Agent                                                         Order
+ Induction Agent                ☐ ☐ Basiliximab 20 mg IV on POD 0 AND POD 4 (IL-2 receptor antagonist)
+                                ☐ ☐ Alemtuzumab 30 mg IV on POD 0 (pre-medicate: antihistamine + hydrocortisone)
+                                — as directed by transplant physician
+ Corticosteroids                ☐ Methylprednisolone _______ mg IV q8h (intraoperative first dose given at reperfusion —
+                                see Anaesthesia record). Taper per transplant physician protocol.
+ Calcineurin Inhibitor          ☐ Tacrolimus _______ mg PO/NG/SL BID.
+                                ☐ Cyclosporin _______ mg PO/NG BID (if tacrolimus intolerant).
+                                Check 12-hour trough level DAILY at 06:00. Target trough: _______ ng/mL (Month 1–
+                                3: 10–15 ng/mL; Month 4–12: 8–12 ng/mL).
+ Antimetabolite                 ☐ Mycophenolate Mofetil (MMF / CellCept) 1000 mg IV/PO BID.
+
+
+ 5. INFECTION PROPHYLAXIS
+  PROTOCOL Targeted to donor/recipient cultures. Transplant Infectious Disease consultation mandatory within 24
+  hours of admission.
+     Category                     Agent                                      Dose / Duration / Notes
+ Bacterial           ☐ Piperacillin/Tazobactam         Broad-spectrum; tailored to donor/recipient airway cultures within
+                                                       48–72 hours. _______ mg IV q _______ hrs.
+                     ☐ Meropenem
+                     ☐ Vancomycin
+                     ☐ Other:
+                     _________________
+ Fungal              ☐ Voriconazole 200 mg IV          Duration per protocol; adjust per culture results and galactomannan
+                     BID                               monitoring.
+                     ☐ Inhaled Amphotericin B
+                     ☐ Other: ________________
+ CMV Antiviral       ☐ Valganciclovir 900 mg PO        CMV serostatus: D _______ / R _______
+                     daily                             ☐ D+/R−: 6 months minimum. ☐ D+/R+: 3 months minimum. ☐ D−/R−:
+                                                       Acyclovir only.
+                     ☐ IV Ganciclovir 5 mg/kg
+                     daily (if NPO/NG)
+ PCP                 Trimethoprim/Sulfamethoxazole     Lifelong prophylaxis. Dose-adjust for renal function.
+                     (TMP-SMX) SS 1 tab PO daily
+
+
+ 6. DRAINS, TUBES & GI PROPHYLAXIS
+ Chest Tubes                    ☐ ☐ Right pleural ☐ Left pleural ☐ Mediastinal
+                                ☐ Maintain on −20 cmH₂O suction initially.
+                                ☐ Transition to water seal when drainage serous and <200 mL/24h with no air leak.
+                                ☐ NOTIFY surgeon if bleeding >150 mL/hr for 2 consecutive hours.
+ Urinary Catheter               ☐ Foley catheter to gravity. Hourly urine output monitoring. NOTIFY if UOP <0.5 mL/kg/hr.
+ Nasogastric / Dobhoff          ☐ Insert NGT/Dobhoff for feeds. Low continuous suction if not feeding. Do NOT commence
+                                enteral feeds until extubated and swallow assessment completed.
+
+
+
+                                     Form Ref: CDH-LTU-PPO-03 | Kuwait MOH | Page 2 of 4
+CDH Lung Transplant Unit — Post-operative Orders                                        CONFIDENTIAL — Physician Order Record
+
+ GI Prophylaxis                  ☐ Pantoprazole 40 mg IV daily (proton pump inhibitor — stress ulcer prophylaxis).
+
+
+ 7. ANALGESIA
+ ☐    ☐ Thoracic epidural (preferred):           ☐    ☐ OR Bilateral ESPB: if anticoagulated; manage per Anaesthesia Pain
+      manage per Anaesthesia Pain Service.            Service.
+      Document level and current infusion.
+
+ ☐    ☐ Paracetamol 1 g IV q6h                   ☐    ☐ Fentanyl PCA (if no epidural/ESPB).
+      SCHEDULED.
+
+ ☐    ☐ NO NSAIDs: Nephrotoxic in                ☐    ☐ Gabapentin 100 mg PO BID may be added for neuropathic pain
+      combination with CNIs                           (with physician review).
+      (tacrolimus/cyclosporin). ABSOLUTE
+      CONTRAINDICATION.
+
+
+ 8. LABORATORY INVESTIGATIONS
+ ☐    Daily Morning Labs (04:00–06:00): CBC with                 ☐    Tacrolimus trough level drawn exactly at 06:00 (12-
+      differential, CMP (Na, K, Cr, BUN, LFTs, Albumin), Mg,          hour post-last dose). Target per immunosuppression
+      Phos, PT/INR, PTT.                                              orders.
+
+ ☐    Portable CXR: daily every morning AND immediately          ☐    12-lead ECG: daily ×3 days post-operatively.
+      post-extubation. Radiology to read same day.
+
+ ☐    ABG q4h AND 30 minutes after any ventilator change.        ☐    CMV PCR at Day 7, then weekly ×4 weeks, then
+                                                                      monthly to 12 months (see CDH-LTU-PERIOP-02
+                                                                      Section 3.3).
+
+
+ 9. DVT PROPHYLAXIS
+ ☐    ☐ Sequential Compression Devices (SCDs): bilaterally at all times when in bed, from admission.
+
+ ☐    ☐ Heparin 5000 units SC q8h: START POD 1 when chest tube drainage <50 mL/hr. HOLD if active bleeding.
+
+
+ 10. PHYSIOTHERAPY & EARLY MOBILISATION
+         Phase                                                           Order
+ While intubated         ☐ Chest percussion and vibration q4h. ☐ Passive limb exercises. ☐ Head-of-bed elevation 30–
+                         45°.
+ POD 1 (post-            ☐ Out of bed to chair if haemodynamically stable (MAP ≥65 mmHg, SpO₂ ≥90% on current O₂). ☐
+ extubation)             Incentive spirometry every hour while awake. ☐ Walking with physiotherapist to bedside.
+ POD 2–3                 ☐ Hallway ambulation with continuous SpO₂ monitoring. ☐ Progressive distance increase as
+                         tolerated. ☐ Stationary cycling if available and tolerated.
+
+
+ 11. ADDITIONAL CLINICAL ORDERS
+ Blood Glucose                   ☐ Blood glucose q4h initially. Insulin sliding scale per ICU protocol. Target glucose 6–10
+                                 mmol/L (steroid-induced hyperglycaemia common post-transplant).
+ Electrolytes                    ☐ Replace Mg and Phos to normal range. Tacrolimus causes Mg wasting — repletion is
+                                 critical. Replace K to maintain K ≥4.0 mmol/L.
+ Transplant ID Consult           ☐ Infectious disease consultation within 24 hours for antimicrobial guidance based on
+                                 donor/recipient cultures.
+ Dietitian                       ☐ Dietitian consult within 24 hours. Immunocompromised diet. Grapefruit/pomelo restriction
+                                 (CYP3A4 inhibition with tacrolimus). Target 25–30 kcal/kg/day.
+ Social Work                     ☐ Social work consult to assess caregiver support and discharge planning from Day 3
+                                 onwards.
+
+                                      Form Ref: CDH-LTU-PPO-03 | Kuwait MOH | Page 3 of 4
+CDH Lung Transplant Unit — Post-operative Orders                                      CONFIDENTIAL — Physician Order Record
+
+
+
+ PRESCRIBER VERIFICATION & SIGNATURE
+         Prescribing Physician                     Pharmacy Verification                         Nursing Check
+ Name:                                   Pharmacist Name:                           RN Name:
+
+
+ Signature:                              Signature:                                 Signature:
+
+
+ Date & Time:                            Date & Time:                               Date & Time:
+
+
+
+
+  ORDER VALIDITY These orders are valid for a maximum of 24 hours from the time of writing. Review and rewrite
+  daily or with any significant clinical change. Any modification must be signed, dated, and timed by the prescribing
+  physician.
+
+
+
+
+                                    Form Ref: CDH-LTU-PPO-03 | Kuwait MOH | Page 4 of 4
+

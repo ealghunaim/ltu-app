@@ -1,0 +1,16 @@
+{% extends "base.html" %}{% from "_form.html" import section, ro_section %}{% block content %}
+<h1>MDT Transplant Decision Form <span class="muted" style="font-size:.55em">CDH-LTU-MDT-05</span></h1>
+<p>{{ m.patient.full_name }} - Civil ID {{ m.patient.civil_id }} - {{ m.patient.age if m.patient.age is not none else '?' }}y {{ m.patient.sex or '' }} <span class="tag {{ 't-green' if final else 't-amber' }}">{{ 'FINAL' if final else 'Draft' }}</span>
+<a class="btn sm sec" href="{{ url_for('mdt.print_form', mid=m.id) }}" target="_blank">Print</a></p>
+<form method="post"><fieldset {{ 'disabled' if final }} style="border:0;padding:0">
+<div class="card"><h2>A/B. Meeting</h2><div class="ff"><div><label>MDT date</label><input type="date" name="mdt_date" value="{{ m.mdt_date or '' }}"></div>
+<div><label>Case type</label><select name="case_type">{% for k, l in case_types.items() %}<option value="{{ k }}" {{ 'selected' if m.case_type==k }}>{{ l }}</option>{% endfor %}</select></div>
+<div><label>Chair</label><input name="chair_name" value="{{ m.chair_name or '' }}"></div></div></div>
+{% for key, title, fields in sections %}{{ section(key, title, fields, state[key]) }}{% endfor %}
+<div class="card"><h2>G. MDT decision</h2><div class="ff"><div><label>Decision</label><select name="decision"><option value="">-</option>{% for k, l in decisions.items() %}<option value="{{ k }}" {{ 'selected' if m.decision==k }}>{{ l }}</option>{% endfor %}</select></div>
+<div><label>Next review</label><select name="next_review"><option value="">-</option>{% for k, l in next_review %}<option value="{{ k }}" {{ 'selected' if review.get('next_review')==k }}>{{ l }}</option>{% endfor %}</select></div>
+<div><label>Specific date</label><input type="date" name="next_review_date" value="{{ review.get('next_review_date','') }}"></div></div></div>
+</fieldset>
+{% if not final %}<p><button class="btn">Save draft</button> {% if current_user.can_decide %}<button class="btn red" name="finalise" value="1" onclick="return confirm('Finalise? The form becomes read-only and the candidate status is updated.')">Finalise decision</button>{% else %}<span class="muted">Only the Medical/Surgical Director or transplant physicians can finalise.</span>{% endif %}</p>
+{% else %}</form>{% if current_user.can_decide %}<form method="post" action="{{ url_for('mdt.reopen', mid=m.id) }}"><button class="btn sec" onclick="return confirm('Reopen for editing?')">Reopen</button></form>{% endif %}{% endif %}
+{% if not final %}</form>{% endif %}{% endblock %}

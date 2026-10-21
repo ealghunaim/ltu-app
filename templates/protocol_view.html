@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block content %}<h1>{{ d.code }} - {{ d.title }}</h1><p class="muted">{{ d.version }} - <a href="{{ url_for('protocols.pdf', code=d.code) }}" target="_blank">Open original PDF</a></p>
+<div class="card"><pre style="white-space:pre-wrap;font-family:inherit;font-size:13px">{{ d.text }}</pre></div>{% endblock %}

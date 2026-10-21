@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block content %}<h1>Referrals</h1>
+<p>{% for k, l in REFERRAL_STATUS.items() %}<a class="btn sm {{ '' if st==k else 'sec' }}" href="?status={{ k }}">{{ l }}</a> {% endfor %}<a class="btn sm sec" href="{{ url_for('referrals.listing') }}">All</a> <a class="btn sm" href="{{ url_for('referrals.new') }}">+ New</a></p>
+<div class="card"><table><tr><th>Patient</th><th>LTU no.</th><th>Diagnosis</th><th>From</th><th>Date</th><th>Status</th></tr>{% for r in rows %}<tr><td><a href="{{ url_for('referrals.view', rid=r.id) }}">{{ r.patient.full_name }}</a></td><td>{{ r.patient.ltu_case_no }}</td><td>{{ r.primary_diagnosis }}</td><td>{{ r.institution }}</td><td>{{ r.referral_date }}</td>
+<td><span class="tag {{ 't-green' if r.status=='decided' else 't-amber' }}">{{ REFERRAL_STATUS[r.status] }}</span></td></tr>{% else %}<tr><td colspan="6" class="muted">None.</td></tr>{% endfor %}</table></div>{% endblock %}

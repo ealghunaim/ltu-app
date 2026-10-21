@@ -1,0 +1,2 @@
+<table><tr><th>Patient</th><th>Diagnosis</th><th>Date</th><th>Status</th></tr>{% for r in referrals %}<tr><td><a href="{{ url_for('referrals.view', rid=r.id) }}">{{ r.patient.full_name }}</a></td><td>{{ r.primary_diagnosis }}</td><td>{{ r.referral_date }}</td>
+<td><span class="tag {{ 't-green' if r.status=='decided' else 't-amber' }}">{{ REFERRAL_STATUS[r.status] }}</span></td></tr>{% else %}<tr><td colspan="4" class="muted">No referrals yet.</td></tr>{% endfor %}</table>

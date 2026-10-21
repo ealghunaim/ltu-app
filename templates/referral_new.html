@@ -1,0 +1,20 @@
+{% extends "base.html" %}{% from "_form.html" import section %}{% block content %}
+<h1>Lung transplant referral</h1><p class="muted">Adults aged 18 and above only. Fields marked * are required.</p>
+<form method="post">
+<div class="card"><h2>Patient</h2><div class="ff">
+<div><label>Civil ID *</label><input name="civil_id" id="civil" value="{{ form.get('civil_id','') }}" required> <button type="button" class="btn sm sec" onclick="lookup()">Find</button> <span id="lk" class="muted"></span></div>
+<div><label>Full name *</label><input name="full_name" id="full_name" value="{{ form.get('full_name','') }}" required></div>
+<div><label>Date of birth</label><input type="date" name="date_of_birth" id="date_of_birth" value="{{ form.get('date_of_birth','') }}"></div>
+<div><label>Sex</label><select name="sex" id="sex"><option value=""></option><option {{ 'selected' if form.get('sex')=='Male' }}>Male</option><option {{ 'selected' if form.get('sex')=='Female' }}>Female</option></select></div>
+<div><label>Nationality</label><input name="nationality" id="nationality" value="{{ form.get('nationality','') }}"></div><div><label>Phone</label><input name="phone" id="phone" value="{{ form.get('phone','') }}"></div></div></div>
+<div class="card"><h2>Referral</h2><div class="ff">
+<div><label>Referring institution</label><input name="institution" value="{{ form.get('institution', current_user.hospital or '') }}"></div>
+<div><label>Referring physician</label><input name="referring_physician" value="{{ form.get('referring_physician', current_user.full_name) }}"></div>
+<div><label>Referral date</label><input type="date" name="referral_date" value="{{ form.get('referral_date', today.isoformat()) }}"></div>
+<div class="wide"><label>Primary diagnosis *</label><input name="primary_diagnosis" value="{{ form.get('primary_diagnosis','') }}" required></div>
+<div class="wide"><label>Reason for referral / question for the MDT *</label><textarea name="reason" required>{{ form.get('reason','') }}</textarea></div></div></div>
+{% for key, title, fields in sections %}{{ section(key, title, fields, {}) }}{% endfor %}
+<p><button class="btn">Submit referral</button></p></form>
+<script>function lookup(){var c=document.getElementById('civil').value.trim();if(!c)return;var lk=document.getElementById('lk');lk.textContent='Searching...';
+fetch('{{ url_for("patients.lookup") }}?civil_id='+encodeURIComponent(c),{credentials:'same-origin'}).then(r=>r.json()).then(d=>{if(!d.found){lk.textContent=d.configured===false?'Not found - enter details manually.':'Not found - enter details manually.';return}
+lk.textContent='Found ('+(d.source==='main_app'?'main hospital system':'LTU')+') - details filled in.';['full_name','date_of_birth','sex','nationality','phone'].forEach(k=>{var e=document.getElementById(k);if(e&&d[k])e.value=d[k]})}).catch(()=>lk.textContent='Lookup failed.')}</script>{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block content %}<div class="paper"><p class="noprint"><button class="btn" onclick="window.print()">Print</button></p>
+<h1>Chest Diseases Hospital - Lung Transplant Unit</h1><p style="text-align:center">Kuwait Ministry of Health</p><hr>
+<p>Date: {{ (r.decision_sent_at or mdt.finalised_at).strftime('%d %B %Y') }}</p><p>To: Dr {{ r.referring_physician }}, {{ r.institution }}</p>
+<p><b>Re: {{ r.patient.full_name }}</b> - Civil ID {{ r.patient.civil_id }} - LTU case {{ r.patient.ltu_case_no }}</p>
+<p>Your patient was discussed at the Lung Transplant MDT on {{ mdt.mdt_date.strftime('%d %B %Y') }}.</p>
+<p><b>Decision: {{ DECISIONS[mdt.decision] }}</b></p>
+{% if listing.get('procedure_type') %}<p>Planned procedure: {{ 'Bilateral' if listing.procedure_type=='BLT' else 'Single' }} lung transplant{% if listing.get('side') %} ({{ listing.side }}){% endif %}; priority {{ listing.get('priority','standard') }}.</p>{% endif %}
+{% if listing.get('rationale') %}<p><b>Rationale / conditions:</b> {{ listing.rationale }}</p>{% endif %}
+{% if mdt.next_review_date %}<p>Next MDT review: {{ mdt.next_review_date.strftime('%d %B %Y') }}{% if listing.get('review_trigger') %} ({{ listing.review_trigger }}){% endif %}.</p>{% endif %}
+<p>Please contact the Transplant Coordinator for any questions.</p><br><p>MDT Chair: {{ mdt.chair_name }}</p></div>{% endblock %}

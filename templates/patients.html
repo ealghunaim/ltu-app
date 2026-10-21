@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block content %}<h1>Patients</h1>
+<form method="get" class="card"><input name="q" value="{{ q }}" placeholder="Name, Civil ID, LTU case no., file no." style="max-width:360px;display:inline-block"> <button class="btn">Search</button> <a class="btn sec" href="{{ url_for('patients.new') }}">+ Register patient</a></form>
+<div class="card"><table><tr><th>Name</th><th>Civil ID</th><th>LTU no.</th><th>Age/Sex</th><th>Status</th></tr>
+{% for p in rows %}<tr><td><a href="{{ url_for('patients.detail', pid=p.id) }}">{{ p.full_name }}</a></td><td>{{ p.civil_id }}</td><td>{{ p.ltu_case_no }}</td><td>{{ p.age if p.age is not none else '' }} {{ p.sex or '' }}</td>
+<td>{% if p.candidate %}<span class="tag t-blue">{{ CANDIDATE_STATUS[p.candidate.status] }}</span>{% endif %}</td></tr>{% else %}<tr><td colspan="5" class="muted">No patients found.</td></tr>{% endfor %}</table></div>{% endblock %}

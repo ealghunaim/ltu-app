@@ -1,0 +1,83 @@
+from datetime import date, timedelta
+
+from flask import Blueprint, render_template, request, redirect, url_for, flash, abort
+from flask_login import login_required, current_user
+
+from models import (db, Patient, Referral, MDTCase, Candidate, CandidateStatusChange, Episode, FollowUp, AuditLog,
+                    CANDIDATE_STATUS, ACTIVE_STATUSES, User, USER_PENDING)
+from core import team_required, decider_required, audit, parse_date, num
+from schemas import months_since
+
+main_bp = Blueprint("main", __name__)
+
+
+def next_monday(d=None):
+    d = d or date.today()
+    return d + timedelta(days=(7 - d.weekday()) % 7)
+
+
+@main_bp.route("/")
+@login_required
+def dashboard():
+    if not current_user.is_team:
+        refs = Referral.query.filter_by(referring_user_id=current_user.id).order_by(Referral.created_at.desc()).all()
+        return render_template("dashboard_referrer.html", referrals=refs)
+    today = date.today()
+    counts = {s: Candidate.query.filter_by(status=s).count() for s in CANDIDATE_STATUS}
+    due_review = Candidate.query.filter(Candidate.status.in_(ACTIVE_STATUSES), Candidate.next_review_due.isnot(None),
+                                        Candidate.next_review_due <= today + timedelta(days=14)).order_by(Candidate.next_review_due).all()
+    new_refs = Referral.query.filter(Referral.status.in_(["new", "evaluation"])).order_by(Referral.created_at).all()
+    open_eps = Episode.query.filter(Episode.stage.notin_(["discharged", "cancelled"])).order_by(Episode.created_at.desc()).all()
+    drafts = MDTCase.query.filter_by(status="draft").order_by(MDTCase.mdt_date).all()
+    # post-transplant follow-ups due in the next 14 days (or overdue)
+    due_fu = FollowUp.query.filter(FollowUp.next_visit_date.isnot(None), FollowUp.next_visit_date <= today + timedelta(days=14)).all()
+    latest = {}
+    for f in due_fu:
+        later = FollowUp.query.filter(FollowUp.patient_id == f.patient_id, FollowUp.visit_date > f.visit_date).first()
+        if not later:
+            latest[f.patient_id] = f
+    pending_users = User.query.filter_by(status=USER_PENDING).count() if current_user.can_manage_users else 0
+    return render_template("dashboard.html", counts=counts, due_review=due_review, new_refs=new_refs, open_eps=open_eps, drafts=drafts,
+                           due_followups=sorted(latest.values(), key=lambda f: f.next_visit_date), next_mdt=next_monday(), pending_users=pending_users,
+                           total_active=sum(counts[s] for s in ACTIVE_STATUSES), transplanted=counts["transplanted"])
+
+
+@main_bp.route("/candidates")
+@team_required
+def candidates():
+    status = request.args.get("status", "")
+    q = Candidate.query.join(Patient)
+    if status in CANDIDATE_STATUS:
+        q = q.filter(Candidate.status == status)
+    elif status != "all":
+        q = q.filter(Candidate.status.in_(ACTIVE_STATUSES))
+    rows = q.order_by(Candidate.priority.desc(), Candidate.listing_date).all()
+    return render_template("candidates.html", rows=rows, status=status or "active")
+
+
+@main_bp.route("/candidates/<int:cid>/status", methods=["POST"])
+@decider_required
+def candidate_status(cid):
+    c = db.session.get(Candidate, cid) or abort(404)
+    new = request.form.get("status")
+    if new not in CANDIDATE_STATUS:
+        abort(400)
+    reason = request.form.get("reason", "").strip()
+    if new != c.status:
+        db.session.add(CandidateStatusChange(candidate_id=c.id, from_status=c.status, to_status=new, reason=reason, by_user_id=current_user.id))
+        c.status = new
+        audit("candidate_status", c.patient_id, f"-> {new}: {reason}")
+    c.notes = request.form.get("notes", c.notes)
+    c.next_review_due = parse_date(request.form.get("next_review_due")) or c.next_review_due
+    db.session.commit()
+    flash("Candidate updated.", "success")
+    return redirect(request.referrer or url_for("main.candidates"))
+
+
+@main_bp.route("/audit")
+@login_required
+def audit_log():
+    if current_user.role != "admin":
+        abort(403)
+    rows = AuditLog.query.order_by(AuditLog.at.desc()).limit(300).all()
+    return render_template("audit.html", rows=rows)

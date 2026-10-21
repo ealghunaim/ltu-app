@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block content %}<h1>Protocol library</h1>
+<form method="get" class="card"><input name="q" value="{{ q }}" placeholder="Search all protocols (e.g. tacrolimus, PGD, CMV)" style="max-width:380px;display:inline-block"> <button class="btn">Search</button></form>
+{% if q %}<div class="card"><h2>Results for "{{ q }}"</h2>{% for h in hits %}<p><a href="{{ url_for('protocols.view', code=h.code) }}">{{ h.code }}</a> - {{ h.line }}</p>{% else %}<p class="muted">No matches.</p>{% endfor %}</div>{% endif %}
+<div class="grid g2">{% for d in docs %}<div class="card"><h2><a href="{{ url_for('protocols.view', code=d.code) }}">{{ d.code }}</a></h2><b>{{ d.title }}</b> <span class="muted">{{ d.version }}</span><p>{{ d.summary }}</p><a class="btn sm" href="{{ url_for('protocols.pdf', code=d.code) }}" target="_blank">Open PDF</a></div>{% endfor %}</div>{% endblock %}

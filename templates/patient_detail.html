@@ -1,0 +1,24 @@
+{% extends "base.html" %}{% block content %}
+<h1>{{ p.full_name }} <span class="muted" style="font-size:.6em">{{ p.ltu_case_no }}</span></h1>
+<p class="muted">Civil ID {{ p.civil_id }} - {{ p.age if p.age is not none else '?' }}y {{ p.sex or '' }} {% if p.nationality %}- {{ p.nationality }}{% endif %} {% if p.phone %}- {{ p.phone }}{% endif %} {% if p.blood_group %}- {{ p.blood_group }}{% endif %}
+{% if cand %} - <span class="tag t-blue">{{ CANDIDATE_STATUS[cand.status] }}</span>{% endif %}{% if tx %} - <span class="tag t-purple">Transplanted {{ tx.transplant_date }}{% if months_post is not none %} ({{ months_post }} mo){% endif %}</span>{% endif %}</p>
+{% if fev_drop and fev_drop >= 20 %}<div class="warnbox">Latest FEV1 is {{ fev_drop }}% below best - assess for CLAD.</div>{% endif %}
+<p class="noprint"><a class="btn sm" href="{{ url_for('referrals.new') }}">+ Referral</a>
+<a class="btn sm" href="{{ url_for('mdt.new', patient_id=p.id, case_type='waitlist_review') }}">+ MDT review</a>
+<form method="post" action="{{ url_for('episodes.new') }}" style="display:inline"><input type="hidden" name="patient_id" value="{{ p.id }}"><button class="btn sm">Start transplant episode</button></form>
+<a class="btn sm" href="{{ url_for('followups.new', pid=p.id) }}">+ Follow-up visit</a></p>
+<div class="grid g2">
+<div class="card"><h2>Candidate</h2>{% if cand %}<p>Status: <b>{{ CANDIDATE_STATUS[cand.status] }}</b>{% if cand.diagnosis %} - {{ cand.diagnosis }}{% endif %}</p><p>Next review: {{ cand.next_review_due or '-' }}</p>
+{% if current_user.can_decide %}<form method="post" action="{{ url_for('main.candidate_status', cid=cand.id) }}"><select name="status" style="width:auto">{% for k, l in CANDIDATE_STATUS.items() %}<option value="{{ k }}" {{ 'selected' if cand.status==k }}>{{ l }}</option>{% endfor %}</select> <input name="reason" placeholder="Reason" style="width:50%;display:inline-block"> <button class="btn sm sec">Change</button></form>{% endif %}
+{% else %}<p class="muted">Not yet a candidate.</p>{% endif %}</div>
+<div class="card"><h2>Demographics</h2><form method="post" action="{{ url_for('patients.edit', pid=p.id) }}" class="ff">
+<div><label>Name</label><input name="full_name" value="{{ p.full_name }}"></div><div><label>DOB</label><input type="date" name="date_of_birth" value="{{ p.date_of_birth or '' }}"></div>
+<div><label>Sex</label><select name="sex"><option></option><option {{ 'selected' if p.sex=='Male' }}>Male</option><option {{ 'selected' if p.sex=='Female' }}>Female</option></select></div>
+<div><label>Phone</label><input name="phone" value="{{ p.phone or '' }}"></div><div><label>Nationality</label><input name="nationality" value="{{ p.nationality or '' }}"></div>
+<div><label>Blood group</label><input name="blood_group" value="{{ p.blood_group or '' }}"></div><div><label>File no.</label><input name="file_number" value="{{ p.file_number or '' }}"></div><div><button class="btn sm sec">Save</button></div></form></div></div>
+{% if fev_chart or tac_chart %}<div class="grid g2"><div class="card">{{ fev_chart|safe }}</div><div class="card">{{ tac_chart|safe }}</div></div>{% endif %}
+<div class="card"><h2>Referrals</h2><table>{% for r in referrals %}<tr><td><a href="{{ url_for('referrals.view', rid=r.id) }}">{{ r.referral_date }}</a></td><td>{{ r.primary_diagnosis }}</td><td>{{ r.institution }}</td><td>{{ REFERRAL_STATUS[r.status] }}</td></tr>{% else %}<tr><td class="muted">None.</td></tr>{% endfor %}</table></div>
+<div class="card"><h2>MDT discussions</h2><table>{% for m in mdts %}<tr><td><a href="{{ url_for('mdt.edit', mid=m.id) }}">{{ m.mdt_date }}</a></td><td>{{ CASE_TYPES[m.case_type] }}</td><td>{{ DECISIONS[m.decision] if m.decision else '-' }}</td><td>{{ 'Final' if m.status=='final' else 'Draft' }}</td></tr>{% else %}<tr><td class="muted">None.</td></tr>{% endfor %}</table></div>
+<div class="card"><h2>Transplant episodes</h2><table>{% for e in episodes %}<tr><td><a href="{{ url_for('episodes.view', eid=e.id) }}">{{ e.transplant_date or e.created_at.date() }}</a></td><td>{{ e.stage }}</td><td>{{ e.procedure or '' }}</td></tr>{% else %}<tr><td class="muted">None.</td></tr>{% endfor %}</table></div>
+<div class="card"><h2>Follow-up visits</h2><table>{% for f in followups %}<tr><td><a href="{{ url_for('followups.view', fid=f.id) }}">{{ f.visit_date }}</a></td><td>{{ f.visit_type }}</td><td>FEV1 {{ f.fev1_l or '-' }}</td><td>Tac {{ f.tacrolimus or '-' }}</td></tr>{% else %}<tr><td class="muted">None.</td></tr>{% endfor %}</table></div>
+{% endblock %}

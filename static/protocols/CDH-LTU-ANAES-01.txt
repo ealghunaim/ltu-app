@@ -1,0 +1,594 @@
+CDH Lung Transplant Unit — Anaesthesia Protocol                                                  CONFIDENTIAL — Clinical Protocol
+
+
+  CHEST DISEASES HOSPITAL | LUNG TRANSPLANT UNIT                                                    Version 1.0
+  Adult Lung Transplant                                                                             April 2026
+                                                                                                    Ref: CDH-LTU-ANAES-01
+  Anaesthesia Protocol
+  Multidisciplinary Perioperative Anaesthesia Protocol
+
+
+
+      Document Scope              Intraoperative anaesthesia management for adult lung transplantation
+     Patient Population           Adult candidates (≥18 years) for single or bilateral lung transplantation
+     Applicable Centre            Lung Transplant Unit, Chest Diseases Hospital, Ministry of Health, Kuwait
+                                  CDH-LTU-PERIOP-02 (Perioperative Protocol) • CDH-LTU-PPO-03 (Post-operative Orders) •
+     Related Protocols
+                                  CDH-LTU-IMPL-01 (LTU Implementation Protocol)
+
+
+  CROSS-REFERENCE This protocol is to be read in conjunction with the CDH LTU Perioperative Protocol (CDH-
+  LTU-PERIOP-02) and the Post-operative Orders (CDH-LTU-PPO-03). Anaesthesia decisions remain the
+  responsibility of the Lead Transplant Anaesthesiologist at all times.
+
+
+ SECTION 1: OVERVIEW & TEAM ROLES
+ 1.1 Purpose and Scope
+This protocol defines the step-by-step intraoperative anaesthetic management of adult patients undergoing lung
+transplantation at Chest Diseases Hospital. It covers all team members involved in anaesthesia care from pre-operative
+assessment through to safe transfer to the ICU. Lung transplantation requires a highly coordinated multidisciplinary
+approach — all team members must be familiar with their specific duties as outlined below.
+
+
+ 1.2 Key Team Members — Anaesthesia Domain
+                  Role                                                       Duties & Authority
+ Lead Transplant Anaesthesiologist           Duty Consultant/Specialist — final clinical authority for all anaesthesia decisions
+ Second Anaesthesiologist                    Consultant/Specialist or Senior Registrar — two anaesthetists required at all lung
+                                             transplant procedures
+ Anaesthesia Assistant                       Prepares equipment, assists induction, manages airway adjuncts, circulates
+                                             drugs, positions defibrillator pads
+ ECMO Specialist / Perfusionist              Senior perfusionist present from induction until ICU transfer; prepares and
+                                             manages CPB/ECMO circuit; operates cell salvage equipment
+ Transplant Surgeon                          Present at induction; communicates timing for cross-clamp, reperfusion, and
+                                             ECMO activation
+ Scrub Nurse / Circulating Nurse             Prepares surgical equipment; assists with ECMO circuit preparation; manages
+                                             cell salvage
+ Transplant Coordinator                      Coordinates timing between retrieval team and OR; communicates cold
+                                             ischaemia time to anaesthesia team
+
+
+ SECTION 2: PRE-OPERATIVE PHASE
+ 2.1 Lead Transplant Anaesthesiologist — Pre-operative Duties
+Prior to day of surgery:
+ • Assess aetiology and severity of underlying lung disease (pulmonary fibrosis, COPD, cystic fibrosis, pulmonary
+    hypertension). Review baseline ABG and PFTs.
+ • Review most recent 6MWT, echocardiogram, right heart catheterisation data, and CT chest.
+ • Assess for significant pulmonary hypertension: resting mean PAP >25 mmHg indicates high risk for induction.
+ • Obtain data regarding previous anaesthetic exposures, surgeries, drug sensitivities, laboratory values, and other
+    organ function.
+
+
+                                    Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 1 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                               CONFIDENTIAL — Clinical Protocol
+
+ • Evaluate and ensure preoperative treatment of active pulmonary infections.
+ • Nutritional assessment; correct electrolyte disturbances.
+ • Review all current medications: PDE-5 inhibitors, prostanoids, ERA (PAH); bronchodilators; immunosuppressants.
+
+On day of surgery:
+ • Obtain donor details from transplant physician: age, weight, height, cause of death, ventilatory parameters, FiO₂,
+    fluid balance, haemodynamic support, infection parameters, and antibiotics administered.
+ • Confirm cold ischaemia time with transplant coordinator; brief entire anaesthesia team on urgency.
+ • Continue pulmonary vasodilators preoperatively (sildenafil, inhaled prostacyclin).
+ • Administer antibiotic prophylaxis per institutional protocol (Meropenem + Vancomycin if no specific directions
+    received).
+ • Confirm tacrolimus/cyclosporin dose administered before OR transfer (per transplant physician instruction).
+ • Identify planned surgical approach: bilateral sequential thoracotomy (clamshell), sternotomy, or VATS-assisted.
+ • Determine ECMO strategy with transplant surgeon: if PA clamping intolerance is likely (PAH, severe RV
+    dysfunction), plan pre-induction ECMO.
+ • Check blood products availability and clotting status; alert haematology if TEG/ROTEM-guided transfusion
+    anticipated.
+ • Discuss defibrillator pad placement with Anaesthesia Technician — pads must be placed before draping.
+
+
+  ⚨ PAH CRITICAL ALERT PAH PATIENTS: Awake arterial line and awake femoral cannulation for ECMO may be
+  required BEFORE induction. Positive pressure ventilation, repositioning, and vasodilating anaesthetic drugs are
+  critical high-risk waypoints in PAH patients — have vasopressors prepared before every step.
+
+
+ 2.2 Anaesthesia Assistant — Equipment Preparation
+Anaesthesia machine check:
+ • Ventilator function and gas supplies confirmed.
+ • Calibrate gas analyser and capnograph — ETCO₂ is a critical monitor in ECMO cases.
+ • Two functional suction devices prepared.
+Draw up and label all induction drugs:
+ • Induction agents: Propofol, Ketamine, Midazolam, Etomidate (PAH/high-risk back-up).
+ • Opioids: Fentanyl/Sufentanil (depending on availability).
+ • Muscle relaxant: Rocuronium/Vecuronium/Cisatracurium.
+ • Emergency vasopressors: epinephrine (diluted), norepinephrine, vasopressin (diluted).
+ • Rapid bolus: metaraminol or phenylephrine.
+ • Calcium chloride 10% prepared for reperfusion.
+ • Methylprednisolone prepared per institutional protocol (see Section 8).
+ • Induction immunosuppression: Alemtuzumab 30 mg IV or Basiliximab 20 mg IV — as directed.
+Airway equipment:
+ • Left-sided double-lumen tube (DLT): 37F/39F adult female; 39F/41F adult male.
+ • Single-lumen ETT for CPB cases or end-of-procedure exchange.
+ • Video laryngoscope (C-MAC/GlideScope) AND standard laryngoscope — both checked.
+ • Fibreoptic bronchoscope connected, light source and image confirmed.
+ • Cook exchange catheter (airway exchange catheter) for DLT-to-SLT exchange at end of case.
+ • Difficult airway cart confirmed available.
+Additional preparation:
+ • Level 1 rapid infuser (or equivalent) primed; TEG/ROTEM analyser available.
+ • Prepare UFH bolus dose: 2000–5000 IU flat dose (or 25–100 IU/kg).
+ • Confirm drug storage refrigerator contains immunosuppressants with correct pharmacy labels.
+ • Place defibrillator pads per surgeon instruction before draping.
+
+
+ 2.3 Perfusionist — CPB/ECMO Circuit Preparation
+ • Confirm ECMO vs CPB strategy with transplant surgeon before patient arrives.
+ • Prime CPB/ECMO circuit per institutional protocol — have circuit ready before induction in high-risk cases.
+
+                                 Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 2 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                               CONFIDENTIAL — Clinical Protocol
+
+ • Confirm cannula sizes with surgeon (central vs peripheral strategy).
+ • Calibrate ACT monitor: target ACT 180–220 seconds during ECMO; >480 seconds for CPB.
+ • Confirm sweep gas supply (O₂ and air blender) for ECMO oxygenator.
+ • Set up cell salvage circuit from skin incision.
+ • Remain present and on standby until patient is safely transferred to ICU.
+
+
+ 2.4 Transplant Coordinator — Pre-operative Coordination
+ • Confirm retrieval team ETA and cold ischaemia clock to OR team; relay to lead anaesthesiologist.
+ • Confirm donor lung quality report (PaO₂/FiO₂ ratio, bronchoscopy findings) is available for anaesthesiologist review.
+ • Relay any last-minute changes in organ quality or retrieval complications to surgical and anaesthesia teams
+    immediately.
+ • Ensure recipient consent and pre-operative checklist are complete.
+
+
+ SECTION 3: MONITORING SETUP
+  MONITORING STANDARD STRICT ASEPTIC PRECAUTIONS must be followed during ALL invasive monitoring
+  procedures. Standard ASA monitoring is the minimum; advanced monitoring as below is mandatory for all lung
+  transplant cases.
+
+
+                 Monitor                                                Specification / Notes
+ Continuous ECG                          ST-segment analysis throughout. 5-lead ECG minimum.
+ Arterial Line                           RIGHT radial artery preferred — monitors for North-South syndrome if peripheral
+                                         VA-ECMO used.
+ Pulse Oximetry                          2 probes (both hands); right finger pulse oximeter as peripheral perfusion marker
+                                         alongside arterial line.
+ Peripheral IV Access                    Minimum two large-bore peripheral IV cannulas (≥16G) for rapid volume
+                                         administration.
+ Central Venous Catheter (CVC)           Preferred site: right internal jugular vein (IJV) + vascular sheath introducer.
+                                         PROTECT right IJV for VV-ECMO access if post-operative ECMO anticipated.
+                                         Alternative: left IJV or subclavian.
+ Pulmonary Artery Catheter (PAC)         Left-sided insertion preferred. Advance to proximal PA and confirm on TEE
+                                         BEFORE pneumonectomy. Withdraw PAC to proximal PA/RVOT before
+                                         pneumonectomy to prevent PA injury.
+ TEE (Transoesophageal Echo)             Insert immediately after intubation. Mandatory for all cases. See Section 3.1.
+ BIS Monitor                             Mandatory during VA-ECMO — volatile agents not taken up via lungs on bypass;
+                                         TIVA in use. Target BIS 40–60.
+ Cerebral Oximetry (NIRS)                Near-infrared spectroscopy; marker of cerebral oxygenation during peripheral
+                                         ECMO.
+ Temperature Probe                       Oesophageal or nasopharyngeal.
+ ETCO₂                                   Critical qualitative indicator: ETCO₂ >20 mmHg confirms transpulmonary blood
+                                         flow on VA-ECMO.
+
+
+ 3.1 TEE Surveillance Protocol
+           Operative Phase                                                  TEE Mandate
+ Post-intubation (baseline)              Full baseline biventricular assessment, intracardiac shunts, PA/PV anatomy.
+ Before pneumonectomy                    Guide PAC withdrawal to proximal PA/RVOT. Confirm PA catheter position.
+ During PA clamping                      Monitor for RV dilatation, septal deviation, haemodynamic response — alert for
+                                         RV failure.
+ On VA-ECMO                              Monitor LV ejection; detect LV overdistension (domed septum); guide LV venting
+                                         if required.
+
+
+                                 Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 3 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                                CONFIDENTIAL — Clinical Protocol
+
+ Post-PA anastomosis                      Colour Doppler: PA anastomotic diameter ≥75% of donor PA. Alert surgeon if
+                                          <75%.
+ Post-PV anastomosis                      PV diameter <2.5 mm or velocity >1.6 m/s indicates anastomotic stenosis — alert
+                                          surgeon immediately.
+ De-airing phase                          Monitor for air in LA, LV, and coronary ostia during final anastomosis stages.
+ ECMO removal                             Confirm adequate biventricular function and lung graft function before
+                                          decannulation.
+
+
+  SECTION 4: ANAESTHETIC INDUCTION
+  4.1 Standard Induction — Low-to-Moderate Risk (Non-PAH)
+Goals: maintain haemodynamic stability; avoid hypotension; ensure adequate oxygenation; minimise PVR increases.
+ • Preoxygenation: 100% FiO₂ to prevent desaturation during induction.
+ • Position: semi-sitting as per patient comfort. Treat as full stomach — use rapid sequence induction.
+ • Induction agents: Propofol (if haemodynamically stable, avoid large boluses) OR Etomidate/Ketamine (unstable
+    patients).
+ • Anxiolysis: Midazolam 1–2 mg IV as adjunct if haemodynamics permit.
+ • Opioids: Sufentanil or Fentanyl (per availability) to blunt sympathetic response to laryngoscopy. Maintain infusion for
+    adequate intraoperative analgesia.
+ • Neuromuscular blockade: Rocuronium (preferred) or Vecuronium for optimal intubation conditions.
+ • Advance left-sided DLT under direct vision; confirm position with fibreoptic bronchoscope immediately after
+    intubation.
+  🚨 CRITICAL If haemodynamic instability occurs at induction: start epinephrine infusion pre-emptively for severe
+  RV dysfunction. Have diluted epinephrine prepared before induction commences.
+
+
+  4.2 High-Risk / PAH Induction Protocol
+ • Discuss pre-induction ECMO with surgeon — consider awake femoral cannulation before induction.
+ • Limit premedication: Midazolam 1–2 mg IV only if respiratory and haemodynamic status permits.
+ • Primary induction agent: Etomidate 0.3 mg/kg IV — minimal myocardial depression.
+ • Maintain vasopressor infusion (epinephrine or norepinephrine) running from before induction commences.
+ • Avoid agents that reduce systemic vascular resistance precipitously (high-dose propofol bolus).
+ • Confirm ECMO circuit primed and perfusionist standing by before commencing induction.
+  ⚠ WARNING HIGH-RISK WAYPOINTS in PAH: (1) Initiation of positive pressure ventilation. (2) Lateral
+  repositioning. (3) Drugs causing afterload reduction. Have vasopressors immediately available at each waypoint.
+  (Murray JTD 2021)
+
+
+  4.3 Disease-Specific Induction Considerations
+              Diagnosis                                               Specific Considerations
+ COPD / Emphysema                      Risk of air trapping causing hypotension on PPV. Prolonged expiratory time (I:E 1:3
+                                       to 1:4). Avoid auto-PEEP. Consider haemodynamic collapse from air-trapping as
+                                       cause of instability.
+ ILD / IPF (Restrictive)               Elevated peak inspiratory pressures from decreased compliance. Anticipate need for
+                                       VA-ECMO. Careful fluid management is critical.
+ Pulmonary Arterial Hypertension       Pre-induction ECMO may be required. Awake arterial line mandatory. High-risk
+                                       waypoints: PPV, repositioning, vasodilating drugs. Serial echo for RV remodelling
+                                       post-operatively.
+ Cystic Fibrosis                       Commence with single-lumen ETT; perform therapeutic bronchoscopy first; then
+                                       exchange to DLT. Cross-infection precautions.
+
+
+  4.4 Anaesthesia Assistant — Induction Support
+ • Confirm all drugs drawn up and labelled before patient arrives in OR.
+
+                                  Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 4 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                               CONFIDENTIAL — Clinical Protocol
+
+ • Assist laryngoscopy — apply cricoid pressure if requested by lead anaesthesiologist.
+ • Hand DLT to anaesthesiologist; ensure fibreoptic bronchoscope is ready for immediate confirmation.
+ • Connect DLT to circuit; confirm bilateral breath sounds and ETCO₂ trace.
+ • Prepare TEE probe; assist anaesthesiologist for insertion immediately post-intubation.
+ • Connect Level 1 rapid infuser to large-bore IV access as directed.
+
+
+ SECTION 5: AIRWAY MANAGEMENT
+ 5.1 Double-Lumen Tube (DLT) — Primary Approach
+ • Select LEFT-sided DLT for the majority of cases, including off-pump and ECMO cases.
+ • Size selection: 37F/39F for adult female; 39F/41F for adult male.
+ • Confirm DLT position with fibreoptic bronchoscope after intubation AND after patient repositioning.
+ • Re-confirm DLT position before each OLV phase.
+ • Bronchial blockers may be used if DLT placement is difficult.
+  ⚠ WARNING Re-confirm DLT position with fibreoptic bronchoscopy after patient is repositioned to lateral decubitus
+  — tube migration is common with positioning changes.
+
+
+ 5.2 Single-Lumen ETT — Specific Indications
+ • Use single-lumen ETT if cardiopulmonary bypass (CPB) is the planned intraoperative support strategy.
+ • Cystic Fibrosis: commence with single-lumen ETT → therapeutic bronchoscopy → then exchange to DLT.
+ • Difficult airway: secure airway with SLT first, then exchange to DLT once stable.
+
+
+ 5.3 DLT to Single-Lumen ETT Exchange — End of Procedure
+ • Plan DLT-to-SLT exchange at end of bilateral procedure.
+ • Use Cook airway exchange catheter through the DLT lumen.
+ • Use video laryngoscope to visualise glottis during exchange.
+ • Insert appropriate single-lumen cuffed ETT over exchange catheter under direct vision.
+ • Confirm position with ETCO₂ and bilateral breath sounds.
+ • Perform bronchoscopy before ICU transfer — inspect anastomoses and clear secretions.
+ • CHECK cuff pressure — AVOID tracheal ischaemia with excessive cuff pressures. Tolerate mild leaks.
+
+
+ SECTION 6: ANAESTHESIA MAINTENANCE & ONE-LUNG VENTILATION
+ 6.1 Anaesthetic Agents
+                 Mode                                                          Protocol
+ Inhalational (off-ECMO)                 Sevoflurane titrated to adequate depth — confirm with BIS target 40–60.
+                                         Supplement with opioid infusion (Sufentanil/Fentanyl). Maintain neuromuscular
+                                         blockade as required.
+ TIVA on VA-ECMO — MANDATORY             Switch to TIVA immediately when VA-ECMO is initiated. Volatile agents are NOT
+                                         taken up by the lungs during bypass. Propofol infusion titrated to BIS 40–60.
+                                         Opioid infusion continued. Do NOT rely on volatile agent monitoring during
+                                         ECMO.
+
+
+ 6.2 One-Lung Ventilation (OLV) Settings — Disease-Specific
+  PROTOCOL NOTE Ventilation strategy is DISEASE-SPECIFIC. Apply the correct settings based on recipient
+  diagnosis and operative phase. Lung protection is the priority after reperfusion.
+         Phase / Diagnosis                                              Ventilator Settings
+ COPD/Obstructive (native lung         I:E 1:3 to 1:4 | RR 10–12/min | Minimal/no PEEP (auto-PEEP risk) | Permissive
+ OLV)                                  hypercapnia acceptable | Watch for haemodynamic collapse from air-trapping
+ ILD/Restrictive (native lung OLV)     I:E 1:1 to 1.5:1 | RR 14–18/min | TV 4–5 mL/kg IBW | PEEP 8–12 cmH₂O | Expect
+                                       high Pplat from low compliance
+
+
+                                 Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 5 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                                CONFIDENTIAL — Clinical Protocol
+
+ General OLV — pre-transplant           Standard OLV to maintain gas exchange and haemodynamic stability. Priority: gas
+                                        exchange and circulation. Lung-protection secondary at this phase.
+ Post-reperfusion — first lung          TV 3–4 mL/kg DONOR IBW | FiO₂ <0.4 | PEEP 5–8 cmH₂O | Dual-mode ventilation
+                                        | Lung-protective strategy applies from reperfusion
+ Post-reperfusion — both lungs          TV 6–8 mL/kg DONOR IBW | FiO₂ lowest to maintain SpO₂ ≥92% | PEEP 5–8
+                                        cmH₂O
+ FiO₂ at moment of reperfusion          FiO₂ 0.21 (room air) at moment of reperfusion — lowest possible. Avoid hyperoxia
+                                        at all costs. Titrate to maintain SpO₂ >94%.
+
+
+ 6.3 Intraoperative Haemodynamic Targets
+              Parameter                                                          Target
+ MAP (on ECMO)                            60–65 mmHg (maintain coronary perfusion)
+ PA Systolic Pressure (intraop)           <40 mmHg during surgery; target 10–15 mmHg after second lung implanted
+ Cardiac Index (ICU)                      1.8–2.2 L/min/m² (avoid higher CI)
+ CVP (post-op target)                     <7 mmHg
+ Haemoglobin                              Target Hb >9 g/dL. Use TEG/ROTEM to guide blood product administration.
+ ECMO Pulsatility                         Maintain pulsatility in systemic and PA waveforms during VA-ECMO.
+ Total Intraoperative Fluids              ≤2000 mL total. Crystalloid + colloid (albumin) + blood products guided by
+                                          TEG/ROTEM.
+
+  ⚠ WARNING AVOID NSAIDs throughout the entire perioperative period — renal risk is amplified by concurrent
+  calcineurin inhibitors (tacrolimus/cyclosporin).
+
+
+ 6.4 Additional Maintenance Duties
+ • Administer prophylactic antibiotics 30 minutes before skin incision, adjusted per recipient airway culture/colonisation
+    profile.
+ • Monitor BIS continuously for depth of anaesthesia.
+ • Monitor blood loss; TEG/ROTEM results; prepare blood products as directed.
+ • Activate cell salvage from time of skin incision.
+ • Maintain warming device (forced-air blanket) — prevent perioperative hypothermia.
+ • Record hourly urine output — alert lead anaesthesiologist if <0.5 mL/kg/h.
+ • Administer induction immunosuppression as directed: Alemtuzumab 30 mg IV OR Basiliximab 20 mg IV via
+    dedicated IV line; document time and drug batch number.
+
+
+ SECTION 7: ECMO / ECLS MANAGEMENT
+  📌 NOTE VA-ECMO is preferred over CPB for intraoperative support. Lower heparin requirements and reduced
+  systemic inflammatory response.
+
+
+ 7.1 Timing and Indication
+ • Pre-induction ECMO: mandated for severe cardiopulmonary failure (severe PAH, severe RV dysfunction, low
+    cardiac reserve).
+ • Rescue ECMO: activate immediately for haemodynamic collapse on PA clamping, RV failure, or severe desaturation
+    refractory to conventional management.
+ • PA clamping test: clamp PA for 5–10 minutes pre-pneumonectomy while monitoring TEE for RV dilatation and
+    haemodynamic tolerance. If intolerant → activate ECMO before pneumonectomy.
+
+
+ 7.2 Cannulation Strategy
+              Strategy                                                  Indication & Details
+ Central V-A ECMO (RA→Aorta)           Preferred for intraoperative support. Direct cannulation by surgeon.
+
+                                  Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 6 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                               CONFIDENTIAL — Clinical Protocol
+
+ Peripheral V-A ECMO (Femoral)        Preferred for post-operative continuation or rescue. Femoral vessels prepped and
+                                      exposed before incision if anticipated.
+ VV-ECMO                              Consider for isolated respiratory failure without cardiac compromise. Protect right
+                                      IJV for VV-ECMO access.
+
+
+ 7.3 Heparin and Anticoagulation
+ • Administer UFH after surgical dissection is complete: flat dose 2000–5000 IU IV. Low-dose protocol acceptable if
+    ECMO flows are maintained.
+ • Target ACT 180–220 seconds during ECMO — check every 30–60 minutes.
+ • Target ACT >480 seconds for CPB.
+
+
+ 7.4 ECMO Flow Management
+ • Start at 50% of calculated cardiac output — adjust per haemodynamics and gas exchange.
+ • Maintain pulsatility in systemic and PA waveforms during VA-ECMO.
+ • Monitor for LV overdistension during VA-ECMO — confirm LV ejection on TEE.
+ • Monitor ETCO₂ continuously: ETCO₂ >20 mmHg confirms transpulmonary blood flow.
+ • Perfusionist: adjust sweep gas (FiO₂ and gas flow) to target pCO₂ and PaO₂ per lead anaesthesiologist direction.
+
+
+ 7.5 ECMO Weaning
+ • Reduce ECMO flow to 1 L/min and hold 10–20 minutes before terminating.
+ • Assess biventricular function and graft function on TEE before decannulation.
+ • Prolong ECMO if: high ventilatory pressures, decreased graft compliance, or severe RV dysfunction persists.
+ • Perform final de-airing under TEE guidance (pulmonary veins, LA, LV) before ECMO removal.
+
+
+ SECTION 8: REPERFUSION PROTOCOL
+  🚨 CRITICAL ALERT Reperfusion is the most critical haemodynamic waypoint. Have all vasopressors and calcium
+  chloride immediately available BEFORE PA clamp release. Communicate clamp release timing clearly between
+  surgeon and anaesthesiologist.
+
+
+ 8.1 Pre-reperfusion Checklist
+ • Administer Methylprednisolone 500 mg IV before reperfusion — document dose and time (ICU team to schedule
+    three subsequent doses).
+ • Perform bronchoscopy through DLT BEFORE pulmonary artery clamp release: inspect bronchial anastomosis
+    integrity and mucosal viability; clear secretions from donor bronchi.
+ • Set FiO₂ to 0.21 (room air) at moment of reperfusion — lowest possible.
+ • Increase vasopressors BEFORE clamp release — prepare for acute hypotension.
+ • Calcium chloride 10% IV bolus: prepare syringe labelled and ready at reperfusion.
+ • Epinephrine diluted bolus syringes: ready for rapid administration.
+
+
+ 8.2 Reperfusion Sequence
+ • Release PA clamp slowly and gradually — not abruptly.
+ • Haemodynamic support: IV fluid boluses (within restrictive target); Epinephrine 5–10 µg IV boluses for instability;
+    Calcium chloride 10% IV bolus at reperfusion.
+ • Monitor ETCO₂ after clamp release — rising ETCO₂ >20 mmHg confirms transpulmonary blood flow.
+ • After reperfusion: switch to post-reperfusion protective ventilation settings (TV 3–4 mL/kg DONOR IBW; FiO₂ 0.3–
+    0.4; PEEP 5–10 cmH₂O).
+ • Reassess TEE immediately: graft function, PA and PV anastomotic patency, RV response, LV function.
+
+
+ 8.3 Primary Graft Dysfunction (PGD) — Intraoperative Recognition
+
+
+
+
+                                 Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 7 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                                  CONFIDENTIAL — Clinical Protocol
+
+
+  ISHLT DEFINITION ISHLT PGD Definition: New bilateral infiltrates on CXR/imaging with a deteriorating PaO₂/FiO₂
+  ratio within 72 hours of transplant, after excluding other causes (anastomotic complication, haemothorax, lobar
+  torsion, cardiogenic oedema).
+    PGD Grade                 PaO₂/FiO₂ Ratio                                    Anaesthesia Action
+ Grade 0              ≥300 mmHg                        Routine lung-protective ventilation; monitor graft function closely.
+ Grade 1              200–299 mmHg                     Intensify lung-protective ventilation; review fluid balance; monitor
+                                                       hourly.
+ Grade 2              100–199 mmHg                     Increase PEEP (8–12 cmH₂O); Pplat <30 cmH₂O; consider or continue
+                                                       ECMO; alert surgical team.
+ Grade 3              <100 mmHg — Severe PGD           Mandatory lung-protective ventilation (TV 4–6 mL/kg IBW; PEEP 8–12
+                                                       cmH₂O). Initiate or continue VA-ECMO/VV-ECMO. Minimise FiO₂.
+                                                       Communicate grade to ICU team.
+
+
+ SECTION 9: ANALGESIA PROTOCOLS
+              Incision Type                     Preferred Regional Technique                           Alternative
+ Bilateral thoracotomy                      Thoracic Epidural (TEA) T4–T6               Bilateral ESPB if anticoagulated
+ Clamshell incision                         Thoracic Epidural T4–T6                     Bilateral ESPB or bilateral TPVB
+ Sternotomy                                 Thoracic Epidural T4–T6                     Bilateral ESPB or bilateral TPVB
+ Anticoagulated patient                     Bilateral ESPB (continuous catheter) —      Bilateral TPVB if ESPB not feasible
+                                            SAFE with anticoagulation; fascial
+                                            plane block
+
+
+ 9.1 Thoracic Epidural Anaesthesia (TEA)
+ • TEA is the preferred analgesic modality after lung transplantation: reduces postoperative mechanical ventilation time
+    and improves pulmonary rehabilitation.
+ • Level: T4–T6 interspace for bilateral thoracotomy or clamshell incision.
+ • Placement timing: if significant intraoperative anticoagulation was used, place thoracic epidural POST-operatively
+    after anticoagulation has cleared, to avoid spinal haematoma.
+
+
+ 9.2 Erector Spinae Plane Block (ESPB) — Anticoagulated Patients
+ • ESPB is SAFE with anticoagulation — fascial plane block (not neuraxial).
+ • Continuous bilateral ESPB catheter technique: Level T5 bilaterally (5th thoracic transverse process). Place under
+    ultrasound guidance.
+ • ESPB and TPVB are equivalent for analgesia beyond 6 hours post-operatively.
+
+
+ 9.3 Multimodal Analgesia — All Patients
+ • Paracetamol 1 g IV every 6 hours (scheduled).
+ • Opioid infusion (Remifentanil or Fentanyl) — lowest effective dose.
+ • AVOID NSAIDs: renal risk amplified by concurrent calcineurin inhibitors (tacrolimus/cyclosporin). NSAIDs are
+    CONTRAINDICATED throughout the perioperative period.
+
+
+ SECTION 10: IMMUNOSUPPRESSION — ANAESTHESIA ROLE
+ 10.1 Lead Anaesthesiologist — Immunosuppression Responsibilities
+ • Confirm tacrolimus or cyclosporin dose administered before OR transfer (per transplant physician instruction) —
+    document in anaesthesia chart.
+ • Administer induction immunosuppression in OR per institutional protocol:
+     – Alemtuzumab 30 mg IV (monoclonal antibody induction): administer via dedicated IV line; pre-medicate as per
+        protocol; have antihistamine and hydrocortisone available for infusion reactions.
+     – OR Basiliximab 20 mg IV (IL-2 receptor antagonist induction): administer on POD 0 and POD 4.
+
+
+                                    Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 8 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                                   CONFIDENTIAL — Clinical Protocol
+
+ • Administer via dedicated IV line — document time of administration and drug batch in anaesthesia record.
+ • Administer Methylprednisolone 500 mg IV before reperfusion of lungs (see Section 8).
+
+
+ 10.2 Anaesthesia Assistant — Immunosuppression Support
+ • Confirm immunosuppressant drugs stored per manufacturer temperature requirements in designated refrigerator.
+ • Check pharmacy label, drug name, dose, batch number, and expiry date before administering.
+  📋 NOTE Dedicated facilities for immunosuppressive drug storage, administration, and monitoring must be present
+  in the anaesthetic room and operating theatre at all times.
+
+
+ SECTION 11: END OF PROCEDURE & TRANSFER TO ICU
+ 11.1 Lead Anaesthesiologist — End of Case Duties
+ • Perform final bronchoscopy before transfer: inspect both bronchial anastomoses; document mucosal viability; clear
+    secretions.
+ • Exchange DLT to single-lumen ETT (see Section 5.3).
+ • Confirm final TEE assessment: biventricular function, graft function, anastomotic patency.
+ • Confirm ECMO decannulation is complete and haemostasis achieved before transfer.
+ • Optimise ventilator settings for transport: TV 6–8 mL/kg IBW; lowest FiO₂ maintaining SpO₂ >94%; PEEP 5–8
+    cmH₂O.
+ • Confirm transport ventilator parameters match OR ventilator settings.
+ • Confirm haemodynamic stability before departure from OR.
+ • Accompany patient to ICU with adequate transport monitoring (SpO₂, ETCO₂, arterial line, ECG).
+ • Complete formal ICU handover to receiving ICU consultant and intensivist.
+
+
+ 11.2 Formal Handover Checklist — ICU Team
+                                                            Handover Item
+
+ ☐    Operative summary: approach (bilateral/single; clamshell/sternotomy); ECMO used (Y/N); duration
+
+ ☐    Cold ischaemia times: first and second lung
+
+ ☐    Intraoperative events: haemodynamic instability, ECMO complications, arrhythmias
+
+ ☐    Fluid balance: total input, output, blood products administered
+
+ ☐    Immunosuppression: agents used, doses, times administered
+
+ ☐    Methylprednisolone: dose given and exact time — ICU team to schedule subsequent doses
+
+ ☐    Analgesic plan: epidural or ESPB in situ, current drug and infusion rate
+
+ ☐    Antibiotics: agent, dose, time given
+
+ ☐    Current vasopressor requirements and doses
+
+ ☐    Ventilator settings at time of transfer
+
+ ☐    PGD Grade at time of transfer (if assessed)
+
+
+ SECTION 12: EMERGENCY PROTOCOLS
+  EMERGENCY STANDARD All emergency scenarios below require immediate communication between lead
+  anaesthesiologist, transplant surgeon, and perfusionist. Document time of event, interventions, and responses in
+  real time.
+
+
+ 12.1 Haemodynamic Collapse on PA Clamping
+ • Immediately increase vasopressor infusion.
+
+                                     Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 9 of 10
+CDH Lung Transplant Unit — Anaesthesia Protocol                                                 CONFIDENTIAL — Clinical Protocol
+
+ • Administer epinephrine IV boluses (5–10 µg).
+ • Request ECMO specialist to initiate ECMO — do not delay.
+ • Alert surgeon: PA clamp may need to be released while ECMO is being established.
+ • Document time of event and all interventions.
+
+
+ 12.2 Intraoperative RV Failure
+ • Establish VA-ECMO if not already running.
+ • Administer epinephrine infusion — titrate to haemodynamic response.
+ • Optimise ventilation to reduce RV afterload: avoid hypoxia, hypercarbia, acidosis, and overinflation.
+ • Assess on TEE: RV dilatation, septal position, LV underfilling.
+ • Milrinone may be added per surgical/cardiology direction.
+
+
+ 12.3 Severe Desaturation During OLV
+ • Apply CPAP 5–10 cmH₂O to non-ventilated (operated) lung if surgically feasible.
+ • Apply PEEP to ventilated (dependent) lung.
+ • Increase FiO₂ to 1.0 temporarily.
+ • Request surgeon to briefly limit lung retraction.
+ • If refractory: activate ECMO.
+
+
+ 12.4 Primary Graft Dysfunction (PGD) Signs — Intraoperative
+ • Confirm diagnosis: new bilateral infiltrates + deteriorating PaO₂/FiO₂ ratio after reperfusion.
+ • Implement lung-protective ventilation: TV 4–6 mL/kg IBW; PEEP 8–12 cmH₂O; Pplat <30 cmH₂O.
+ • Minimise FiO₂ (target SpO₂ >92% with lowest FiO₂ possible).
+ • Maintain restrictive fluid strategy.
+ • If refractory hypoxaemia: continue or reinitiate VA-ECMO/VV-ECMO.
+ • Document PGD grade and communicate to ICU team at handover (see Section 8.3 for grading).
+
+
+ 12.5 Anaphylaxis / Infusion Reaction (Immunosuppression)
+ • Stop the offending infusion immediately.
+ • Administer adrenaline 0.1–0.5 mg IV (or IM if IV not immediately available).
+ • Administer hydrocortisone 200 mg IV + chlorphenamine 10 mg IV.
+ • Support airway and ventilation.
+ • Initiate fluid resuscitation.
+ • Document reaction and alert transplant team and pharmacy.
+
+
+ SECTION 13: DOCUMENT CONTROL
+           Version                                                          Details
+ 1.0                           Initial release — April 2026. Chest Diseases Hospital, LTU.
+ Review Due                    April 2027 or following any critical incident or protocol deviation.
+ Approved By                   Head of Lung Transplant Unit, CDH / Director of Anaesthesia, CDH
+
+
+
+
+                                  Protocol Ref: CDH-LTU-ANAES-01 | Kuwait MOH | Page 10 of 10
+

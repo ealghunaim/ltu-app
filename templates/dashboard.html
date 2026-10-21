@@ -1,0 +1,18 @@
+{% extends "base.html" %}{% block content %}
+<h1>Lung Transplant Unit</h1><p class="muted">Next weekly MDT: <b>Monday {{ next_mdt.strftime('%d %b %Y') }}, 08:00</b> - LTU Conference Room</p>
+{% if pending_users %}<div class="warnbox">{{ pending_users }} account(s) waiting for approval - <a href="{{ url_for('auth.users') }}">review</a></div>{% endif %}
+<div class="grid g4">
+<div class="card stat"><b>{{ total_active }}</b><span>Active candidates</span></div>
+<div class="card stat"><b>{{ counts['listed'] }}</b><span>Listed</span></div>
+<div class="card stat"><b>{{ new_refs|length }}</b><span>Referrals awaiting MDT</span></div>
+<div class="card stat"><b>{{ transplanted }}</b><span>Transplanted (follow-up)</span></div></div>
+<div class="grid g2">
+<div class="card"><h2>Referrals to review <a class="btn sm sec" href="{{ url_for('referrals.listing') }}">all</a></h2>
+{% for r in new_refs %}<div><a href="{{ url_for('referrals.view', rid=r.id) }}"><b>{{ r.patient.full_name }}</b></a> - {{ r.primary_diagnosis }} <span class="muted">({{ r.institution }}, {{ r.referral_date }})</span>
+<a class="btn sm" href="{{ url_for('mdt.new', patient_id=r.patient_id, referral_id=r.id) }}">Present at MDT</a></div>{% else %}<p class="muted">No pending referrals.</p>{% endfor %}</div>
+<div class="card"><h2>MDT drafts</h2>{% for m in drafts %}<div><a href="{{ url_for('mdt.edit', mid=m.id) }}">{{ m.patient.full_name }}</a> <span class="muted">{{ m.mdt_date }} - {{ CASE_TYPES[m.case_type] }}</span></div>{% else %}<p class="muted">None.</p>{% endfor %}</div>
+<div class="card"><h2>Candidate reviews due (14 days)</h2>{% for c in due_review %}<div><a href="{{ url_for('patients.detail', pid=c.patient_id) }}">{{ c.patient.full_name }}</a>
+<span class="tag t-blue">{{ CANDIDATE_STATUS[c.status] }}</span> due {{ c.next_review_due }}{% if c.next_review_due < today %} <span class="tag t-red">overdue</span>{% endif %}</div>{% else %}<p class="muted">Nothing due.</p>{% endfor %}</div>
+<div class="card"><h2>Open transplant episodes</h2>{% for e in open_eps %}<div><a href="{{ url_for('episodes.view', eid=e.id) }}">{{ e.patient.full_name }}</a> <span class="tag t-purple">{{ e.stage }}</span></div>{% else %}<p class="muted">None.</p>{% endfor %}</div>
+<div class="card"><h2>Post-transplant visits due</h2>{% for f in due_followups %}<div><a href="{{ url_for('patients.detail', pid=f.patient_id) }}">{{ f.patient.full_name }}</a> <span class="muted">next visit {{ f.next_visit_date }}</span>{% if f.next_visit_date < today %} <span class="tag t-red">overdue</span>{% endif %}</div>{% else %}<p class="muted">None recorded. See <a href="{{ url_for('followups.listing') }}">follow-up schedule</a>.</p>{% endfor %}</div>
+<div class="card"><h2>Quick actions</h2><p><a class="btn" href="{{ url_for('patients.new') }}">+ Register patient</a> <a class="btn sec" href="{{ url_for('referrals.new') }}">+ New referral</a> <a class="btn sec" href="{{ url_for('protocols.library') }}">Protocols</a></p></div></div>{% endblock %}

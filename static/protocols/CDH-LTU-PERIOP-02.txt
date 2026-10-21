@@ -1,0 +1,356 @@
+CDH Lung Transplant Unit — Perioperative Protocol                                              CONFIDENTIAL — Clinical Protocol
+
+
+  CHEST DISEASES HOSPITAL | LUNG TRANSPLANT UNIT                                                 Version 1.0
+  Lung Transplantation                                                                           April 2026
+                                                                                                 Ref: CDH-LTU-PERIOP-02
+  Perioperative Protocol
+  Comprehensive Pathway: Admission to Discharge — ISHLT / IHLSC Aligned
+
+
+
+                               Perioperative management of adult lung transplant recipients from admission through
+            Scope
+                               hospital discharge
+     Patient Population        Adults (≥18 years) undergoing single or bilateral lung transplantation at CDH
+                               CDH-LTU-ANAES-01 (Anaesthesia Protocol) • CDH-LTU-PPO-03 (Post-operative Orders) • CDH-
+      Related Protocols
+                               LTU-IMPL-01 (LTU Implementation Protocol)
+
+
+  CROSS-REFERENCE This protocol is to be read alongside the CDH LTU Anaesthesia Protocol (CDH-LTU-
+  ANAES-01) for intraoperative anaesthesia management and the Post-operative Orders (CDH-LTU-PPO-03) for ICU
+  order sets. Clinical judgment remains paramount in the presence of anatomical variations or complications.
+
+
+    PHASE 1
+    Day 0 — Pre-          ADMISSION & PRE-OPERATIVE PREPARATION
+     Operative
+
+
+ 1.1 The Call & Admission
+Patient is admitted to the pre-transplant/thoracic isolation unit upon organ offer acceptance. All admissions must be
+treated as emergent.
+
+
+                   Task                                                         Detail
+ Immediate Investigations              STAT CBC + differential, comprehensive metabolic panel, coagulation profile
+                                       (PT/INR/PTT), viral serologies, Type & Crossmatch (PRBCs, FFP, platelets
+                                       prepared).
+ Diagnostics                           STAT 12-lead ECG and upright CXR to establish baseline and rule out acute
+                                       infection.
+ NPO Status                            Strict NPO enforced immediately on admission.
+ Physical Examination                  Full physical examination focusing on respiratory status; document any active
+                                       infection signs.
+ Informed Consent                      Consent obtained for transplant procedure and possible ECMO/CPB use.
+ Anticoagulants                        Withhold standard anticoagulants.
+ Induction Immunosuppression           Prepare induction immunosuppression (Basiliximab/Alemtuzumab) per protocol to
+                                       be given prior to or during procedure.
+ Transplant Coordinator                Notify transplant coordinator; confirm cold ischaemia clock. Relay OR team
+                                       readiness.
+
+
+    PHASE 2
+ Day 0 — Operating        INTRAOPERATIVE STANDARDS & SURGICAL STEPS
+       Room
+
+
+
+  SEE ALSO For complete anaesthesia management including monitoring, ECMO protocols, and emergency
+  procedures, refer to CDH-LTU-ANAES-01 (Anaesthesia Protocol). This section covers surgical standards and
+  implantation technique.
+
+
+
+
+                                  Protocol Ref: CDH-LTU-PERIOP-02 | Kuwait MOH | Page 1 of 6
+CDH Lung Transplant Unit — Perioperative Protocol                                              CONFIDENTIAL — Clinical Protocol
+
+ 2.1 Pre-Operative Anaesthesia & ECLS Readiness
+ • Left-sided double-lumen endotracheal tube (DLT) with immediate bronchoscopic confirmation of position.
+ • Arterial line, CVC, pulmonary artery catheter with continuous SvO₂, and continuous TEE.
+ • ECLS Readiness: Central V-A ECMO preferred over CPB. Femoral vessels prepped and exposed routinely before
+    incision if peripheral cannulation is anticipated.
+ • Confirm cold ischaemia time with transplant coordinator before skin incision.
+
+
+ 2.2 Patient Positioning & Incision
+               Procedure                                                  Position & Incision
+ Bilateral Sequential Lung Transplant     Supine with arms extended and elevated. Bilateral anterolateral thoracotomy
+ (BSLTx)                                  (clamshell) through 4th or 5th intercostal space with transverse sternotomy.
+ Single Lung Transplant (SLTx)            Lateral decubitus. Standard posterolateral thoracotomy.
+
+
+ 2.3 Surgical Implantation Sequence — Posterior-to-Anterior
+  SURGICAL STANDARD The implantation sequence strictly follows posterior-to-anterior anatomical orientation:
+  Bronchus → Pulmonary Artery → Pulmonary Veins (Atrial Cuff). Meticulous haemostasis is critical throughout.
+
+
+     Step             Procedure                                            Technical Details
+                Native                    • Isolate and divide pulmonary artery and veins using vascular staplers.
+                Pneumonectomy             • Divide mainstem bronchus proximal to the upper lobe take-off.
+      1                                   • Remove native lung; thoroughly irrigate pleural cavity with warm antibiotic
+                                          solution.
+                                          • Send pleural fluid for immediate microbiological culture.
+                Bronchial                 • Trim donor and recipient bronchi closely to secondary carinae to minimise
+                Anastomosis               ischaemic watershed areas.
+                                          • End-to-end anastomosis with 4-0 absorbable monofilament (PDS):
+                                             – Membranous portion: continuous running suture.
+      2                                      – Cartilaginous portion: interrupted figure-of-eight or continuous running with
+                                             precise mucosal approximation.
+                                          • Wrap anastomosis with peribronchial tissue or vascularised pedicle (intercostal
+                                          muscle flap, thymic tissue) if ischaemic risk is high.
+                PA Anastomosis            • Ensure appropriate donor PA length to avoid kinking post-reperfusion.
+                                          • End-to-end anastomosis: 5-0 continuous non-absorbable monofilament
+                                          (Prolene).
+      3                                   • Leave anterior aspect of suture line loose ("growth factor") to prevent stricture
+                                          upon reperfusion and distension.
+                                          • Flush PA gently prior to tying final knot to clear intraluminal thrombus or air.
+                LA Cuff Anastomosis       • Apply Satinsky clamp to recipient left atrium, encompassing pulmonary vein
+                                          stumps.
+      4                                   • Open recipient pulmonary veins to create unified atrial cuff.
+                                          • Anastomose donor LA cuff to recipient LA cuff: continuous 4-0 Prolene suture.
+                De-airing &               • CRITICAL: Reperfusion must be performed GRADUALLY over 10–15
+                Reperfusion               minutes. Controlled slow reperfusion minimises endothelial shear stress
+                                          and limits PGD.
+                                          • Before fully tying LA anastomosis: briefly release PA clamp to flush blood and
+                                          air via LA suture line (retrograde de-airing).
+      5                                   • Tie LA anastomosis securely.
+                                          • Partially release PA clamp. Wait for haemodynamic stabilisation. Administer
+                                          Methylprednisolone 500 mg IV prior to full reperfusion.
+                                          • Assess implanted lung: direct vision for expansion, compliance, and
+                                          homogeneous colour.
+
+
+
+
+                                  Protocol Ref: CDH-LTU-PERIOP-02 | Kuwait MOH | Page 2 of 6
+CDH Lung Transplant Unit — Perioperative Protocol                                                CONFIDENTIAL — Clinical Protocol
+
+
+     PHASE 3
+    Days 0–3 —          IMMEDIATE POST-OPERATIVE ICU MANAGEMENT
+  Cardiothoracic ICU
+
+
+
+  SEE ALSO: CDH-LTU-PPO-03 For complete ICU order set, refer to CDH-LTU-PPO-03 (Post-operative Orders). All
+  patients must be admitted to Cardiothoracic ICU in STRICT ISOLATION.
+
+
+             System                                                   Protocol Guidelines
+ Respiratory — Ventilation      Protective lung ventilation: Vt 6 mL/kg DONOR ideal body weight. PEEP 5–8 cmH₂O. Target
+                                extubation within 12–24 hours to prevent VAP and reduce positive pressure effects on
+                                bronchial healing.
+ Haemodynamics                  Strict "dry" state. Target CVP <8 mmHg. MAP 65–80 mmHg via vasopressors
+                                (norepinephrine preferred over fluid boluses). Use loop diuretics/CRRT aggressively for fluid
+                                overload.
+ Immunosuppression              Triple therapy initiation: CNI (Tacrolimus target 10–15 ng/mL months 1–3) + Antimetabolite
+                                (MMF 1000 mg BID) + tapering Corticosteroids. Check tacrolimus trough daily at 06:00.
+ Infection Prophylaxis          Bacterial: broad-spectrum (Piperacillin/Tazobactam) tailored to donor/recipient cultures.
+                                Fungal: inhaled Amphotericin B or systemic antifungal. Viral: Valganciclovir (CMV
+                                prophylaxis per serostatus). PCP: Trimethoprim/Sulfamethoxazole.
+ Chest Tubes                    Maintain on −20 cmH₂O suction initially. Monitor for haemorrhage (notify surgeon if >150
+                                mL/hr × 2 hours). Transition to water seal when drainage serous and <200 mL/24h with no
+                                air leak.
+ Analgesia                      Thoracic epidural preferred. If epidural contraindicated (anticoagulation): bilateral ESPB.
+                                Paracetamol 1 g IV q6h scheduled. Fentanyl PCA if no epidural. NSAIDs
+                                CONTRAINDICATED.
+ Fluid Management               D5W at 30 mL/hr to KVO. Strict I/O monitoring. Target negative fluid balance. Furosemide
+                                IV PRN to maintain CVP <8 mmHg.
+ Renal                          Hourly urine output monitoring. Target ≥0.5 mL/kg/hr. Nephrology consult early if oliguria or
+                                eGFR decline.
+
+
+ 3.1 Bronchoscopy Schedule — Post-operative
+         Timing                     Type                                              Purpose
+ Day 0/1 — Post-op        Bedside (routine)          Inspect anastomoses, clear secretions, confirm airway patency.
+ Day 1–3 (if concern)     Therapeutic /              Atelectasis, mucus plugging, infiltrate assessment, culture.
+                          diagnostic
+ 1 Month (scheduled)      TBBx + BAL                 Protocol surveillance; rejection grading; culture. See Year-1 Form (CDH-
+                                                     LTU-YEAR1-03).
+
+
+ 3.2 Primary Graft Dysfunction (PGD) — ICU Grading & Management
+  ISHLT PGD DEFINITION PGD is assessed at 0, 24, 48, and 72 hours post-reperfusion. Diagnosis: bilateral
+  radiographic infiltrates + PaO₂/FiO₂ decline within 72 hours, excluding other causes (anastomotic complication,
+  haemothorax, lobar torsion, cardiogenic oedema). Grade represents worst documented score.
+     Grade              PaO₂/FiO₂                                              Management
+ 0                ≥300 mmHg                 Standard lung-protective ventilation. Routine monitoring. Early extubation
+                                            protocol as planned.
+ 1                200–299 mmHg              Continue protective ventilation. Review fluid balance. Increase monitoring
+                                            frequency (ABG q2h). Diuresis.
+ 2                100–199 mmHg              Increase PEEP (8–12 cmH₂O); Pplat <30 cmH₂O; prone positioning if refractory.
+                                            Consider ECMO consultation.
+
+
+
+                                    Protocol Ref: CDH-LTU-PERIOP-02 | Kuwait MOH | Page 3 of 6
+CDH Lung Transplant Unit — Perioperative Protocol                                               CONFIDENTIAL — Clinical Protocol
+
+ 3                <100 mmHg                VV-ECMO or VA-ECMO per institutional protocol. TV 4–6 mL/kg IBW; PEEP 8–
+                                           12 cmH₂O; Pplat <30 cmH₂O. Minimise FiO₂. Inhaled nitric oxide (iNO) may be
+                                           added.
+
+
+ 3.3 CMV Prophylaxis — Serostatus-Guided
+          Donor (D)                      Recipient (R)                                      Protocol
+ D+                              R−                              Highest risk. Valganciclovir 900 mg PO daily (or IV
+                                                                 Ganciclovir 5 mg/kg per renal function) for minimum 6
+                                                                 months. CMV PCR weekly ×4 then monthly.
+ D+                              R+                              High risk. Valganciclovir 900 mg PO daily for minimum 3
+                                                                 months. CMV PCR monitoring monthly.
+ D−                              R+                              Intermediate risk. Valganciclovir 900 mg PO daily for
+                                                                 minimum 3 months.
+ D−                              R−                              Low risk. Acyclovir prophylaxis. CMV PCR PRN if
+                                                                 symptomatic.
+
+
+      PHASE 4          STEP-DOWN WARD & REHABILITATION
+      Days 4–14
+
+
+ 4.1 Chest Tube Management
+ • Maintain on −20 cmH₂O suction initially.
+ • Transition to water seal when drainage is serous and <200 mL/24h with no air leak.
+ • Remove chest tubes sequentially: right pleural → left pleural → mediastinal (if applicable).
+ • Daily CXR for assessment of lung expansion and fluid collections.
+
+
+ 4.2 Airway Clearance Programme
+ • Aggressive bronchopulmonary hygiene from Day 1 of extubation.
+ • Incentive spirometry every hour while awake.
+ • Nebulised bronchodilators and mucolytics as indicated.
+ • Chest physiotherapy: percussion and vibration q4h while intubated.
+ • Therapeutic bronchoscopy if atelectasis persists beyond 24–48 hours.
+
+
+ 4.3 Early Mobilisation Programme
+         Stage                                                      Activity Target
+ Stage 1 (Day 1)           Out of bed to chair (if haemodynamically stable). Passive limb exercises.
+ Stage 2 (Days 2–3)        Standing with assistance. Ambulation with physiotherapist to bedside.
+ Stage 3 (Days 4–7)        Hallway ambulation with pulse oximetry monitoring. Progressive increase in distance.
+ Stage 4 (Days 8–14)       Stationary cycling. Stair climbing. Independent ambulation with continuous SpO₂ monitoring.
+
+  ⚠ SAFETY NOTE Continuous pulse oximetry during ALL exertion phases. Halt activity if SpO₂ <90% or patient
+  reports significant dyspnoea.
+
+
+ 4.4 Nutritional Support
+ • Early enteral feeding: commence immediately upon extubation if swallow assessment is passed.
+ • If prolonged ventilation (>48h): insert nasogastric/Dobhoff tube; begin enteral feeds within 24–48 hours of
+    admission.
+ • Dietitian consultation: ensure adequate caloric and protein intake for wound healing.
+ • Blood glucose monitoring: steroid-induced hyperglycaemia is common; insulin protocol as per ICU policy.
+ • Target protein: 1.5–2.0 g/kg/day. Caloric target: 25–30 kcal/kg/day.
+
+
+                                   Protocol Ref: CDH-LTU-PERIOP-02 | Kuwait MOH | Page 4 of 6
+CDH Lung Transplant Unit — Perioperative Protocol                                                 CONFIDENTIAL — Clinical Protocol
+
+ 4.5 Immunosuppression Monitoring — Step-Down Phase
+                   Agent                                  Target / Dose                                 Monitoring
+ Tacrolimus (CNI)                            Months 1–3: 10–15 ng/mL trough Months       Daily 12h trough at 06:00
+                                             4–12: 8–12 ng/mL trough
+ Mycophenolate (MMF)                         1000 mg BID (IV or PO) Reduce if            CBC weekly. GI monitoring.
+                                             leucopenia or GI intolerance
+ Prednisolone                                Taper per institutional protocol from       Blood glucose monitoring
+                                             Methylprednisolone induction
+
+
+     PHASE 5           DISCHARGE PLANNING & PATIENT EDUCATION
+     Days 14–21+
+
+
+ 5.1 Mandatory Discharge Criteria
+  DISCHARGE GATE ALL criteria below must be met before discharge. No patient to be discharged without
+  therapeutic tacrolimus trough level confirmed for at least 48 consecutive hours and confirmed outpatient follow-up
+  within 7 days.
+                                                         Discharge Criterion
+
+ ☐    Ambulatory independently or with baseline assistance.
+
+ ☐    Acceptable oxygen saturation on room air (or at safe, stable supplemental O₂ baseline).
+
+ ☐    Surgical incisions healing with no signs of active infection.
+
+ ☐    Therapeutic tacrolimus trough levels achieved and documented for ≥48 consecutive hours.
+
+ ☐    Stable spirometry (FEV₁ ≥50% of predicted or at acceptable post-operative baseline for underlying diagnosis).
+
+ ☐    Afebrile for ≥48 hours without new antibiotics.
+
+ ☐    Outpatient transplant clinic appointment confirmed within 7 days of discharge.
+
+ ☐    Outpatient pulmonary rehabilitation programme booked.
+
+ ☐    Bronchoscopy at 1 month scheduled.
+
+ ☐    Patient and caregiver fully educated on all medications, monitoring, and warning symptoms.
+
+
+ 5.2 Pre-Discharge Patient Education Checklist
+ ✓                           Education Topic                                              Key Points to Cover
+
+ ☐    Immunosuppression adherence                                       Complete understanding of the triple therapy schedule.
+                                                                        Emphasise: never stop medications without contact with
+                                                                        transplant team.
+
+ ☐    Home monitoring protocol                                          Daily temperature, blood pressure, weight, and home
+                                                                        spirometry (FEV₁ and FVC). Reinforce action thresholds
+                                                                        for each.
+
+ ☐    Warning signs                                                     Fever >38°C, SpO₂ decline, spirometry drop >10%,
+                                                                        change in sputum, rash, neurological symptoms, oedema.
+
+ ☐    Infection prevention                                              Hand hygiene, avoid crowded spaces, sun protection, pet
+                                                                        restrictions, food safety (immunocompromised diet).
+
+ ☐    Surgical precautions                                              Thoracotomy/sternal lifting restrictions, wound care, safe
+                                                                        body mechanics for 6–8 weeks.
+
+ ☐    Sun protection & skin surveillance                                Post-transplant skin cancer risk. Annual dermatology
+                                                                        review. Daily SPF 50+ and protective clothing.
+
+
+
+
+                                    Protocol Ref: CDH-LTU-PERIOP-02 | Kuwait MOH | Page 5 of 6
+CDH Lung Transplant Unit — Perioperative Protocol                                                CONFIDENTIAL — Clinical Protocol
+
+
+ ☐     Drug interactions                                              Common OTC medications, herbal supplements, and
+                                                                      foods (grapefruit) that interact with tacrolimus/cyclosporin.
+
+ ☐     Follow-up schedule                                             Clinic visit within 7 days. Bronchoscopy at 1 month.
+                                                                      Confirm next outpatient appointment before leaving.
+
+
+ SECTION 6: PROTOCOL FAMILY & CROSS-REFERENCES
+           Protocol                 Reference Number                                           Scope
+ LTU Implementation            CDH-LTU-IMPL-01                   Unit governance, mandate, clinical pathway overview, QAPI.
+ Protocol                                                        Parent document.
+ Perioperative Protocol        CDH-LTU-PERIOP-02                 Admission to discharge surgical and clinical pathway.
+ (this document)
+ Anaesthesia Protocol          CDH-LTU-ANAES-01                  Intraoperative anaesthesia, ECMO, monitoring, and
+                                                                 emergency protocols.
+ Post-operative Orders         CDH-LTU-PPO-03                    ICU order set: ventilation, fluids, immunosuppression,
+ (PPO)                                                           prophylaxis, analgesia.
+ MDT Decision Form             CDH-LTU-MDT-05                    Listing decisions, MDT minutes, decision documentation.
+ Year-1 Follow-Up Form         CDH-LTU-YEAR1-03                  Post-transplant clinic surveillance form (months 1, 3, 6, 9,
+                                                                 12).
+ Annual Follow-Up Form         CDH-LTU-ANNUAL-04                 Post year-1 annual surveillance with CLAD/DSA/dd-cfDNA.
+
+
+ SECTION 7: DOCUMENT CONTROL
+           Version                                                          Details
+ 1.0                           Initial release — April 2026. Merged from v1 (surgical technique SOP) and v2 (admission-to-
+                               discharge pathway). Chest Diseases Hospital, LTU.
+ Review Due                    April 2027 or following any critical incident or significant protocol deviation.
+ Approved By                   Head of Lung Transplant Unit, CDH / Head of Cardiothoracic Surgery, CDH
+
+
+
+
+                                  Protocol Ref: CDH-LTU-PERIOP-02 | Kuwait MOH | Page 6 of 6
+

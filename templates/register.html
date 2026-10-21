@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block content %}
+<div class="card" style="max-width:480px;margin:30px auto"><h1>Referring physician registration</h1><p class="muted">For physicians at MOH hospitals referring adult (&ge;18) lung transplant candidates. The LTU team approves each account.</p>
+<form method="post"><label>Full name</label><input name="full_name" required><label>Hospital / institution</label><input name="hospital" required><label>Email</label><input type="email" name="email" required>
+<label>Phone</label><input name="phone"><label>Password (8+ characters)</label><input type="password" name="password" minlength="8" required><p><button class="btn">Register</button> <a href="{{ url_for('auth.login') }}">Back to sign in</a></p></form></div>{% endblock %}

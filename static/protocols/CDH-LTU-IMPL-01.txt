@@ -1,0 +1,912 @@
+Chest Diseases Hospital — Lung Transplant Unit                                            Implementation Protocol v3.0
+
+
+
+
+                                  CHEST DISEASES HOSPITAL
+                                         Kuwait Ministry of Health
+
+
+
+
+                        Lung Transplant Unit
+                            Implementation Protocol
+
+                      Clinical, Administrative, and Structural Framework
+
+
+
+ Institution             Chest Diseases Hospital, Kuwait MOH
+
+ Document Type           Unit Implementation Protocol
+
+ Patient Scope           Adults ≥ 18 years
+
+ Effective Date          2026
+
+ Version                 3.0
+
+ Review Cycle            Annual
+ Prepared for            Office of the Chief Medical Officer
+
+
+
+
+                                Kuwait Ministry of Health | Confidential | Page 1 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                                                 Implementation Protocol v3.0
+
+
+
+Table of Contents
+Table of Contents............................................................................................................................ 2
+1. Executive Summary .................................................................................................................... 4
+      Core Directives ........................................................................................................................ 4
+2. Mission, Vision & Mandate ......................................................................................................... 5
+   2.1 Mission Statement................................................................................................................. 5
+   2.2 Vision ..................................................................................................................................... 5
+   2.3 Mandate & Scope.................................................................................................................. 5
+   2.4 Patient Population ................................................................................................................. 5
+   2.5 Regulatory & Institutional Alignment ..................................................................................... 5
+3. Administrative Governance & Leadership .................................................................................. 7
+   3.1 Executive Core Team............................................................................................................ 7
+   3.2 Reporting Structure & Oversight ........................................................................................... 8
+4. Multidisciplinary Team (MDT) — Composition & Operating Procedures .................................. 9
+   4.1 MDT Composition ................................................................................................................. 9
+      Mandatory Attendees .............................................................................................................. 9
+      Regular Attendees ................................................................................................................... 9
+      Ad-Hoc Invited Participants ..................................................................................................... 9
+   4.2 Meeting Schedule & Format ................................................................................................. 9
+   4.3 Mandate ................................................................................................................................ 9
+   4.4 Documentation & Output..................................................................................................... 10
+5. Clinical Infrastructure & Facility Requirements ........................................................................ 11
+   5.1 Dedicated Clinical Teams ................................................................................................... 11
+      Outpatient Transplant Clinic .................................................................................................. 11
+      Dedicated Cardiothoracic ICU ............................................................................................... 11
+      Dedicated Transplant Ward................................................................................................... 11
+   5.2 Operating Theatre Requirements ....................................................................................... 11
+   5.3 Essential Medical Technology ............................................................................................ 12
+6. Domestic Transplant Programme — Operational Pathway ..................................................... 13
+   6.1 Organ Procurement Network & Donor Identification .......................................................... 13
+   6.2 Surgical Team Structure ..................................................................................................... 13
+   6.5 Programme Activation Protocol .......................................................................................... 13
+7. Clinical Pathways & Protocols .................................................................................................. 15
+8. Training, Accreditation & Capacity Building ............................................................................. 17
+   8.1 Staff Training Requirements ............................................................................................... 17
+   8.2 Simulation & Drills ............................................................................................................... 17
+
+
+                                            Kuwait Ministry of Health | Confidential | Page 2 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                                               Implementation Protocol v3.0
+
+
+
+   8.3 Accreditation Pathway ........................................................................................................ 17
+9. Quality Assurance & Performance Improvement (QAPI)......................................................... 18
+10. Document Control ................................................................................................................... 19
+   Appendix.................................................................................................................................... 20
+
+
+
+
+                                           Kuwait Ministry of Health | Confidential | Page 3 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                          Implementation Protocol v3.0
+
+
+
+1. Executive Summary
+The Lung Transplant Unit (LTU) at the Chest Diseases Hospital (CDH), Kuwait Ministry of
+Health, is established as the national centre of excellence for lung transplantation and the
+centralised hub for the comprehensive management of all pre- and post-transplant adult
+patients across Kuwait. This protocol defines the structural, administrative, and clinical
+framework within which the LTU operates as a fully functional domestic transplant programme.
+
+The LTU is built upon a multidisciplinary model that integrates transplant pulmonology,
+cardiothoracic surgery, anaesthesiology, critical care, pharmacy, and allied health professionals
+under a unified governance structure. It operates with the explicit mandate to deliver world-class
+transplant care, optimise waitlist outcomes, maintain long-term graft surveillance, and evolve in
+accordance with ISHLT standards.
+
+ This document serves as the governing implementation framework. Detailed clinical management
+ protocols — including eligibility criteria, immunosuppression regimens, rejection grading, and
+ antimicrobial prophylaxis — are contained in the separate CDH Lung Transplant Clinical Protocol.
+
+
+Core Directives
+   • Establish CDH as Kuwait's national lung transplant centre with full domestic transplant
+      capability.
+   • Centralise all pre- and post-transplant care for adult Kuwaiti patients under one
+      multidisciplinary unit.
+   • Maintain rigorous candidate selection and waitlist optimisation aligned with ISHLT 2021
+      guidelines.
+   • Operate a fully staffed domestic transplant programme including organ procurement,
+      surgical, and post-operative pathways.
+   • Drive continuous quality improvement through structured QAPI metrics and registry
+      benchmarking.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 4 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+2. Mission, Vision & Mandate
+
+2.1 Mission Statement
+ To provide equitable, evidence-based, and compassionate lung transplant care to all eligible adult
+ patients in Kuwait through a nationally integrated, multidisciplinary programme centred at the Chest
+ Diseases Hospital; to maximise graft survival and quality of life; and to continuously advance the
+ standard of thoracic transplantation in the region.
+
+
+
+2.2 Vision
+To be recognised as a leading lung transplant centre in the Middle East, delivering outcomes
+benchmarked against the world's foremost programmes, and establishing Kuwait as a self-
+sufficient centre of thoracic transplant expertise.
+
+
+2.3 Mandate & Scope
+The LTU operates under the authority of the Kuwait Ministry of Health and reports directly to the
+Head of Department and then to the Chief Medical Officer of the Chest Diseases Hospital. Its
+mandate encompasses:
+
+   •   Centralised referral intake, evaluation, and listing of all adult lung transplant candidates
+       in Kuwait.
+   •   Coordination with MOH hospital hubs across Kuwait for the identification and referral of
+       eligible candidates.
+   •   Operation of a domestic lung transplant programme including donor procurement,
+       transplant surgery, and perioperative management at CDH.
+   •   Lifelong post-transplant surveillance and co-management of all transplant recipients
+       residing in Kuwait.
+   •   Coordination with the Kuwait Transplant Society and relevant national regulatory bodies.
+
+
+2.4 Patient Population
+ Note: The LTU serves adult patients aged 18 years and above. Paediatric lung transplantation is
+ outside the scope of this unit and is referred to an appropriate paediatric centre as determined by the
+ treating team and MOH directorate.
+
+
+
+2.5 Regulatory & Institutional Alignment
+The LTU operates in full compliance with:
+   • Kuwait Ministry of Health Transplant Regulations and Law No. 55 of 1987 on Human
+      Organ Transplantation.
+   • Kuwait Transplant Society (KTS) protocols for deceased donor identification and organ
+      allocation.
+   • International Society for Heart and Lung Transplantation (ISHLT) registry requirements
+      and clinical guidelines.
+
+
+                               Kuwait Ministry of Health | Confidential | Page 5 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                          Implementation Protocol v3.0
+
+
+
+   •   CDH institutional policies on patient safety, informed consent, and clinical governance.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 6 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                          Implementation Protocol v3.0
+
+
+
+3. Administrative Governance & Leadership
+A cohesive, clearly defined leadership model is essential for navigating the complex regulatory
+and clinical environments inherent to solid organ transplantation. The LTU operates under an
+Executive Core Team with clearly delineated roles and accountability structures.
+
+
+3.1 Executive Core Team
+             Role                                                 Responsibilities
+
+ Head of Department             Oversees the smooth running of the program and related
+ (Thoracic Surgery)             administrative issues. Acts as a safe-guard for the program.
+
+ Head of Unit and Surgical      Oversees donor organ procurement protocols, recipient surgical
+ Director (Thoracic             techniques, intraoperative mechanical support (ECMO/CPB),
+ Surgery)                       immediate postoperative surgical complications, and surgical team
+                                performance. Chairs the surgical governance committee.
+
+ Medical Director               Manages referral triage, waitlist prioritisation, immunosuppression
+ (Transplant Pulmonology)       protocols, and longitudinal post-transplant surveillance for rejection and
+                                infection. Serves as principal clinical lead for the MDT.
+
+ Transplant Administrator       Directs financial clearance, resource allocation, staffing coordination,
+                                MOH reporting, and submission of data to national and international
+                                transplant registries.
+
+ Transplant Coordinator         Responsible for the end-to-end coordination of pre- and post-transplant
+ (x2)                           patient care. Facilitates evaluation workup, navigates patient
+                                difficulties, maintains communication between patients and physicians
+                                pre-transplant, and ensures continuity of daily management post-
+                                transplant. Acts as the primary point of contact for patients, families,
+                                and referring teams. Pre-emptively detects and communicates
+                                emerging clinical concerns to the responsible physician.
+
+ Senior Thoracic Surgeon        Supports the Surgical Director in all aspects of patient preparation,
+ (x2)                           surgical planning, intraoperative care, and post-transplant surgical
+                                monitoring. Participates in the on-call procurement and implantation
+                                rota.
+ Transplant Pulmonologist       Supports the Medical Director in pre-transplant evaluation, MDT
+ (x4)                           participation, and post-transplant outpatient management. Distributed
+                                across Kuwait MOH hospital hubs to ensure coverage and facilitate
+                                referrals from all regions.
+
+ Transplant Pharmacist          Manages immunosuppression therapeutic drug monitoring, adverse
+                                drug reaction surveillance, medication reconciliation, and drug
+                                interaction review for all LTU patients. Provides drug education to
+                                patients and nursing staff.
+
+ Transplant Psychologist /      Conducts pre-transplant psychosocial assessments, screens for
+ Psychiatrist                   psychiatric contraindications, provides ongoing psychological support
+                                post-transplant, and participates in MDT evaluation of complex
+                                psychosocial cases.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 7 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                          Implementation Protocol v3.0
+
+
+
+ Transplant Dietitian           Provides nutritional assessment and optimisation during pre-transplant
+                                prehabilitation and post-transplant recovery. Manages cachexia,
+                                obesity, and metabolic complications of long-term immunosuppression.
+
+ Transplant                     Oversees the pre-transplant pulmonary rehabilitation programme and
+ Physiotherapist /              post-transplant physical recovery. Coordinates with ICU physiotherapy
+ Rehabilitation Lead            for early mobilisation protocols.
+
+ Transplant Social Worker       Coordinates psychosocial support, financial counselling, housing and
+                                family welfare issues, and community reintegration planning for
+                                transplant recipients.
+
+
+
+3.2 Reporting Structure & Oversight
+The LTU reports through the following governance chain:
+   • The Medical Director and Surgical Director report jointly to the Head of Department.
+   • The HOD reports to the Kuwait MOH Directorate of Specialised Medical Care.
+   • The Transplant Administrator maintains direct liaison with the MOH Finance and
+      Administrative Directorate.
+   • The LTU collaborates with the Kuwait Transplant Society for all deceased donor
+      procurement and allocation activities.
+
+ An Annual Programme Review is to be conducted by the CMO's office, inclusive of all QAPI metrics,
+ staffing adequacy review, and registry data submission confirmation.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 8 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                          Implementation Protocol v3.0
+
+
+
+4. Multidisciplinary Team (MDT) — Composition & Operating
+Procedures
+The MDT is the central governing body for all clinical case evaluation, candidate waitlisting, and
+complex management decisions within the LTU.
+
+
+4.1 MDT Composition
+Mandatory Attendees
+  • Surgical Director (Thoracic Surgery)
+  • Medical Director (Transplant Pulmonology)
+  • Transplant Coordinator(s) — at least one per meeting
+  • Infectious Disease Physician
+  • Transplant Anaesthesiologist
+  • Transplant Social Worker
+
+
+Regular Attendees
+   • Transplant Pulmonologists
+   • Transplant Psychologist / Psychiatrist
+   • Transplant Dietitian
+   • Transplant Physiotherapist / Rehabilitation Lead
+
+
+Ad-Hoc Invited Participants
+   • Referring pulmonologists or primary care physicians presenting new cases.
+   • Specialised consultants (nephrology, cardiology, hepatology, rheumatology) as required
+     by individual case complexity.
+
+
+4.2 Meeting Schedule & Format
+       Parameter                                                       Detail
+ Frequency                 Weekly
+
+ Day & Time                Mondays, 08:00 AM
+
+ Venue                     Chest Diseases Hospital, Lung Transplant Unit Conference Room
+
+ Quorum                    Medical Director (or designated Transplant Pulmonologist) + Surgical
+                           Director + at least one Transplant Coordinator
+
+ Format                    In-person; remote participation via secure video link permitted for hub
+                           pulmonologists presenting referral cases
+
+
+
+4.3 Mandate
+   •   Comprehensive evaluation and discussion of all new referral cases.
+
+
+                              Kuwait Ministry of Health | Confidential | Page 9 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+   •   Formal review of completed waitlist evaluation workups and listing decisions (List /
+       Decline / Conditional Listing with defined criteria for re-review).
+   •   Continuous reassessment of currently listed candidates, including status changes,
+       deterioration, new complications, and psychosocial developments.
+   •   Review of complex post-operative and post-discharge challenges.
+   •   Organ offer review and accept/decline decisions for deceased donor organs.
+
+
+4.4 Documentation & Output
+   •   All MDT decisions are formally documented in a structured MDT minutes template by the
+       Transplant Coordinator (attached at the end)
+   •   Each case entry records: clinical summary, investigations reviewed, decision reached,
+       rationale, responsible clinician, and follow-up action with deadline.
+   •   Waiting list decisions are communicated in writing to the referring physician within 5
+       working days as part of a formal written report.
+   •   Each patient referred will have a CDH file opened where the meeting proceedings and
+       decisions will be saved.
+   •   MDT minutes are retained for a minimum of 10 years as part of the transplant
+       programme record.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 10 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+5. Clinical Infrastructure & Facility Requirements
+The LTU requires dedicated physical and technological infrastructure to support the full scope of
+a domestic lung transplant programme. Requirements are organised into two tiers: the core
+outpatient and post-transplant hub, and the surgical/perioperative programme components.
+
+
+5.1 Dedicated Clinical Teams
+Outpatient Transplant Clinic
+   • Dedicated clinic space with at least two consulting rooms, a lung function laboratory, and
+      a phlebotomy/IV access suite.
+   • Private space for psychosocial consultations and patient education.
+
+
+Dedicated Cardiothoracic ICU
+   • Minimum 4 beds designated for post-transplant care; isolated from general thoracic
+      surgical cases where possible.
+   • Equipped for rapid deployment of Veno-Arterial (VA) and Veno-Venous (VV) ECMO.
+   • Continuous renal replacement therapy (CRRT) capability at each transplant bed.
+   • Isolation rooms with positive/negative pressure-switching capability.
+   • Dedicated nursing staff with specialised training in immunosuppressed patient
+      management and early rejection recognition.
+
+
+Dedicated Transplant Ward
+   • Step-down unit with continuous telemetry monitoring and HEPA-filtered air handling.
+   • Nursing staff trained in immunosuppression administration, infection surveillance, and
+      home spirometry instruction.
+   • Single rooms with ensuite facilities; strict visiting protocols to minimise infection
+      exposure.
+
+
+5.2 Operating Theatre Requirements
+   •   Designated cardiothoracic operating theatre available on an on-call basis for organ
+       implantation.
+   •   Heart-lung bypass pump and perfusionist availability 24/7.
+   •   ECMO circuit primed and available within 30 minutes of activation.
+   •   Bronchoscopy capability in theatre for intraoperative airway assessment.
+   •   Dedicated anaesthetic team trained in single-lung ventilation and haemodynamic
+       management of the transplant recipient.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 11 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+5.3 Essential Medical Technology
+        Technology                                             Clinical Application
+
+ Ex Vivo Lung Perfusion      Assessment and rehabilitation of marginal donor lungs to safely expand
+ (EVLP)                      the available organ pool. Standard protocol at 37°C with acellular
+                             perfusate.
+
+ Extracorporeal Life         Mobile and fixed ECMO circuits for intraoperative support, bridge to
+ Support (ECLS)              transplant, and management of severe Primary Graft Dysfunction (PGD
+                             Grade 3).
+
+ Advanced                    Routine surveillance bronchoscopy with transbronchial biopsies (TBBx),
+ Bronchoscopy Suite          bronchoalveolar lavage (BAL), fluoroscopy-guided interventions, and
+                             airway anastomosis inspection.
+
+ Right Heart                 Haemodynamic evaluation in pre-transplant workup and post-transplant
+ Catheterisation             monitoring of pulmonary haemodynamics.
+
+ High-Resolution CT          Pre-transplant recipient chest evaluation, donor lung assessment, and
+ (HRCT)                      post-transplant radiological surveillance.
+
+ Home Spirometry             Daily FEV1 monitoring for all post-transplant patients. Patient-reported
+ System                      data transmitted to the LTU for early detection of allograft dysfunction.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 12 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+6. Domestic Transplant Programme — Operational Pathway
+The LTU operates a fully integrated domestic lung transplant programme. All components of the
+transplant process — from donor identification through to surgical implantation and recovery —
+are managed within CDH with oversight from the LTU core team.
+
+
+6.1 Organ Procurement Network & Donor Identification
+   •   The LTU works in formal collaboration with the Kuwait Transplant Society (KTS) for all
+       deceased donor organ procurement and allocation.
+   •   All ICUs across Kuwait MOH hospitals are required to notify the KTS and LTU
+       Transplant Coordinator immediately upon identification of a potential brain-dead donor
+       meeting initial referral criteria.
+   •   A dedicated on-call Transplant Coordinator is available 24 hours/day, 7 days/week to
+       receive donor notifications and coordinate assessment.
+   •   Donor assessment, acceptance and matching are outlined in the detailed transplant
+       protocol.
+
+
+6.2 Surgical Team Structure
+             Role                                             On-Call Responsibility
+
+ Transplant Surgeon (Lead)      Available within 60 minutes of activation call. Directs procurement team
+                                logistics, recipient implantation, and intraoperative decision-making.
+
+ Senior Thoracic Surgeon        Available within 60 minutes. Supports implantation or leads
+ (Assist)                       procurement run if donor is at a distant centre.
+
+ Transplant                     Available within 60 minutes. Responsible for anaesthetic induction,
+ Anaesthesiologist              haemodynamic management, and ECMO coordination.
+
+ Perfusionist (ECMO)            Available within 45 minutes. Manages CPB/ECMO circuit priming and
+                                intraoperative extracorporeal support.
+
+ Transplant Coordinator         Available 24/7. Coordinates activation logistics, recipient notification,
+ (On-Call)                      theatre booking, and family communication.
+ ICU Consultant                 Notified on activation. Prepares dedicated CTICU bed and ensures
+                                ECMO and CRRT readiness.
+
+
+
+6.5 Programme Activation Protocol
+ STEP 1 — Donor Notification
+   •   KTS contacts on-call Transplant Coordinator with donor details.
+   •   Coordinator notifies Medical Director and Surgical Director immediately.
+
+ STEP 2 — Donor Assessment
+   •   Surgical team dispatched for bronchoscopy and direct donor lung inspection.
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 13 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+   •   EVLP team placed on standby if ECD criteria are met.
+   •   Accept/Decline decision communicated to KTS within 2 hours of notification.
+
+ STEP 3 — Recipient Activation
+   •   Recipient contacted by Transplant Coordinator and instructed to present to CDH.
+   •   Pre-operative admission and preparation initiated per standing pre-transplant order set.
+   •   Theatre team and ICU notified; anaesthetic pre-assessment completed.
+
+ STEP 4 — Procurement & Implantation
+   •   Procurement team departs to donor centre; cold ischaemic time tracking begins.
+   •   Target cold ischaemic time: ≤ 6 hours (bilateral) / ≤ 8 hours (single lung).
+   •   Implantation proceeds per standard surgical protocol; ECMO initiated as per
+       intraoperative decision matrix.
+
+ STEP 5 — ICU Handover
+   •   Structured verbal and written handover from surgical team to CTICU team at the
+       bedside.
+   •   Immediate post-operative orders activated; lung-protective ventilation commenced.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 14 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+7. Clinical Pathways & Protocols
+ This section provides a high-level overview of the five clinical phases. For full detail — including
+ eligibility criteria, disease-specific thresholds, immunosuppression protocols, rejection grading,
+ antimicrobial prophylaxis, and follow-up schedules — please refer to the CDH Lung Transplant
+ Clinical Protocol (separate document). The Structured Referral Form should be used by all referring
+ physicians.
+
+
+ Phase I — Candidate Evaluation
+
+A rigorous, evidence-based evaluation process is enforced to ensure appropriate organ
+stewardship and candidate safety.
+    • Standard workup: Diagnostics:
+        – Pulmonary function tests (PFTs): spirometry, lung volumes, DLCO.
+        – High-resolution CT (HRCT) chest.
+        – Quantitative V/Q scan.
+        – Echocardiography and right heart catheterisation.
+        – 6-minute walk test (6MWT).
+        – Full metabolic, haematological, immunological, and microbiological panel.
+
+   •   Contraindications are assessed per ISHLT 2021 guidelines and CDH Clinical Protocol
+       (refer to Protocol Sections 3–5).
+   •   All evaluation cases must be presented to the weekly MDT for formal listing decision.
+
+ Phase II — Waitlist Optimisation & Prehabilitation
+
+   •   Prehabilitation: Pulmonary Rehabilitation:
+       – Mandatory supervised exercise programme, minimum 3 sessions per week.
+       – Baseline and reassessment 6MWT performed every 3 months.
+
+   •   Nutrition: Nutritional Optimisation:
+       – BMI target 18.5–35 kg/m²; dietitian-led intervention if outside range.
+
+   •   Microbiology: Infection Surveillance:
+       – Routine sputum surveillance for multi-drug resistant organisms (Burkholderia
+          cenocepacia, Mycobacterium abscessus) at listing and every 6 months.
+
+   •   Status review: Waitlist Status Review:
+       – All listed candidates reviewed at MDT at least quarterly, or sooner if clinical
+          deterioration is suspected.
+       – Inactive status, delisting, or urgency upgrade decisions documented at MDT with
+          rationale.
+
+ Phase III — Perioperative & Surgical Management
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 15 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+
+   •   Donor Assessment: Evaluation per Section 6.2 criteria.
+   •   Intraoperative Strategy: Protocolised decision matrix for VA ECMO versus CPB based
+       on haemodynamic tolerance during pneumonectomy.
+   •   Induction Immunosuppression: Basiliximab (non-depleting IL-2 receptor antagonist)
+       administered at induction; refer to CDH Clinical Protocol for full induction and
+       maintenance regimen.
+   •   Target cold ischaemic time ≤ 6 hours bilateral; ≤ 8 hours single lung.
+
+ Phase IV — Postoperative ICU Protocols
+
+   •   Ventilator Weaning: Lung-protective ventilation (Vt 6 ml/kg IBW, plateau pressure ≤ 25
+       cmH₂O). Target extubation within 24–48 hours where haemodynamically stable.
+   •   PGD Management: Staged protocol — iNO for moderate PGD; VV ECMO for Grade 3
+       PGD at 72 hours. Refer to CDH Clinical Protocol for full PGD grading and management
+       algorithm.
+   •   Immunosuppression: Calcineurin inhibitor (Tacrolimus) trough levels therapeutic by day
+       3–5; combined with Mycophenolate Mofetil and tapering corticosteroids.
+   •   Prophylaxis: Antimicrobial, antifungal, and antiviral prophylaxis per CDH Clinical
+       Protocol.
+
+ Phase V — Long-Term Surveillance
+
+   •   Surveillance Bronchoscopy: Protocol bronchoscopy with TBBx and BAL at 1, 3, 6, 12
+       months post-transplant, then annually to 5 years (or as clinically indicated thereafter).
+   •   CLAD Monitoring: Daily home spirometry. FEV1 decline ≥ 10% from post-transplant
+       baseline triggers urgent clinic review within 5 working days.
+   •   Outpatient Follow-Up: Weekly for first month; fortnightly months 2–3; monthly months 4–
+       12; then quarterly from year 2 (refer to CDH Clinical Protocol for full schedule).
+   •   Rejection: All biopsy-proven rejection episodes (acute cellular, chronic lung allograft
+       dysfunction) managed per CDH Clinical Protocol grading and treatment algorithm.
+   •   Long-term outcomes are entered into the ISHLT registry annually by the Transplant
+       Coordinator.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 16 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+8. Training, Accreditation & Capacity Building
+The LTU maintains a structured training and competency framework to ensure all staff meet the
+standards required for a safe and accredited transplant programme.
+
+
+8.1 Staff Training Requirements
+   •   All transplant nurses (ward and ICU) must complete a recognised transplant nursing
+       competency programme prior to independent practice.
+   •   Transplant physicians and surgeons must have completed subspecialty training in
+       transplant pulmonology or thoracic transplant surgery at an accredited international
+       center.
+   •   Annual competency assessments are required for all LTU clinical staff.
+
+
+8.2 Simulation & Drills
+   •   Annual simulation exercises for organ activation, ECMO initiation, and acute rejection
+       escalation.
+   •   Quarterly nursing drills for immunosuppressed patient emergency management.
+
+
+8.3 Accreditation Pathway
+   •   The Transplant Administrator coordinates all documentation requirements for
+       institutional and MOH accreditation submissions.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 17 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                           Implementation Protocol v3.0
+
+
+
+9. Quality Assurance & Performance Improvement (QAPI)
+A continuous data-driven review process is critical for maintaining accreditation, driving clinical
+excellence, and benchmarking against international standards (International Society for Heart
+and Lung Transplant). The QAPI programme is led by the Medical Director with Transplant
+Administrator support.
+
+        Domain                       Key Performance Indicators (KPIs)                                Review
+                                                                                                    Frequency
+
+ Surgical Outcomes       30-day mortality; 1-year survival; reoperation for bleeding;             Monthly
+                         PGD Grade 3 at 72 hours; cold ischaemic time compliance
+                         (≤06h bilateral).
+
+ Medical                 Acute cellular rejection rate at 1 year; CLAD incidence at 3             Quarterly
+ Management              years; CMV viraemia incidence; invasive fungal infection
+                         rate; tacrolimus therapeutic trough achievement by day 5.
+ Waitlist                Time from referral to MDT evaluation (≤14 days target);                  Quarterly
+ Management              time from MDT decision to listing; waitlist mortality rate;
+                         proportion of candidates completing prehabilitation.
+
+ Long-Term Graft         1-year, 3-year, and 5-year graft survival; BOS-free survival             Bi-annually
+ Survival                at 3 years; patient quality of life score (SF-36 or
+                         equivalent) at 1 and 3 years post-transplant.
+
+ Operational             ICU length of stay; total hospital length of stay; 30-day                Quarterly
+ Efficiency              unplanned readmission rate; bronchoscopy surveillance
+                         compliance at 1 and 3 months.
+
+ Patient Safety          Medication errors per 100 patient days; bloodstream                      Monthly
+                         infection rate per 1000 catheter-days; surgical site
+                         infection rate.
+
+ Benchmarking            Comparison of 1-year and 3-year survival against ISHLT                   Annual
+                         registry medians for comparable centre volume and
+                         diagnostic mix. Reported at Annual Programme Review.
+
+
+ Note: All KPI data are collated by the Transplant Coordinator and presented to the MDT at regular
+ intervals. Adverse outcome trends trigger a formal Root Cause Analysis (RCA) within 30 days, with
+ corrective action plans documented and reviewed at the subsequent QAPI session.
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 18 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                               Implementation Protocol v3.0
+
+
+
+10. Document Control
+       Version                Date                           Author(s)                      Summary of Changes
+
+ 1.0                 2024                           LTU Core Team                        Initial draft
+
+ 2.0                 2025                           Medical Director /                   Expanded governance,
+                                                    Surgical Director                    updated eligibility criteria,
+                                                                                         QAPI revision
+
+ 3.0                 2026                           LTU Core Team                        Comprehensive revision:
+                                                                                         Mission/Vision, domestic
+                                                                                         programme pathway,
+                                                                                         expanded team roles,
+                                                                                         updated QAPI, training
+                                                                                         framework
+
+
+
+
+                              Kuwait Ministry of Health | Confidential | Page 19 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                                  Implementation Protocol v3.0
+
+
+
+Appendix
+  CHEST DISEASES HOSPITAL                                                                           LTU Case No.:
+  Lung Transplant Unit | Kuwait Ministry of Health
+  MDT Transplant Decision Form                                                                      MDT Date:
+
+
+                                                                                                    MRN:
+
+
+
+
+ A. PATIENT IDENTIFICATION
+ Full Name                             Date of Birth                   Age                         Gender             Civil ID
+
+
+ Referring Physician                   Referring Institution           Date of Referral            Nationality
+
+
+
+
+ B. CASE TYPE (SELECT ONE)
+
+ ☐ New Referral            ☐ Waitlist Review             ☐ Organ Offer                ☐ Post-Tx Review           ☐ Complex /
+                                                         Review                                                  Other
+
+
+ C. CLINICAL SUMMARY
+ Primary Diagnosis                                 Disease Duration                             Underlying Aetiology / Subtype
+
+
+ Functional Parameters (most recent)
+                                           DLCO (%                                                                        SpO₂
+ FEV₁ (% pred)        FVC (% pred)                            TLC (% pred)          6MWT (m)          SpO₂ Rest
+                                            pred)                                                                        Exertion
+
+
+
+                                                                          Pulm. Artery Pressure
+         O₂ Requirement                  NYHA / mMRC Class                                               WHO/UNOS Dx Category
+                                                                                 (mPAP)
+
+
+
+
+ D. MULTIDISCIPLINARY EVALUATION SUMMARY
+             Domain                    Findings / Concerns                         Domain                   Findings / Concerns
+
+ Cardiac (Echo / RHC)                                                   Renal Function
+
+ Hepatic Function                                                       Haematology
+ Microbiology / MDR
+                                                                        Oncology Screen
+ Status
+ Nutritional Assessment                                                 Functional / Rehab
+ (BMI)                                                                  Status
+ Psychosocial /
+                                                                        Social Support
+ Psychiatric
+
+
+
+
+                                     Kuwait Ministry of Health | Confidential | Page 20 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                                 Implementation Protocol v3.0
+
+
+
+ Radiology (HRCT / V-Q)                                               Immunology / PRA / DSA
+
+
+ E. CONTRAINDICATION SCREENING
+         Absolute Contraindication                    Present?           Relative Contraindication / Concern                Present?
+
+ Active or recently treated malignancy (<2          ☐ Yes ☐           Severe osteoporosis with vertebral                   ☐ Yes ☐
+ yrs, histology-dependent)                             No             fractures                                               No
+                                                    ☐ Yes ☐                                                                ☐ Yes ☐
+ Uncontrolled extrapulmonary infection                                BMI >35 kg/m² or <17 kg/m²
+                                                       No                                                                     No
+ Active substance abuse or non-                     ☐ Yes ☐                                                                ☐ Yes ☐
+                                                                      Mechanical ventilation (non-bridging)
+ adherence                                             No                                                                     No
+ Severe irreversible dysfunction of major           ☐ Yes ☐           Highly resistant / untreatable pathogen              ☐ Yes ☐
+ organ (renal, hepatic, cardiac)                       No             (e.g., B. cenocepacia, M. abscessus)                    No
+ Absence of adequate psychosocial                   ☐ Yes ☐           Significant psychiatric disorder —                   ☐ Yes ☐
+ support                                               No             undertreated                                            No
+ Documented, persistent non-adherence               ☐ Yes ☐           Frailty / poor functional reserve (SPPB              ☐ Yes ☐
+ to medical therapy                                    No             ≤6)                                                     No
+
+
+ F. MDT DISCUSSION SUMMARY
+ Key points raised, concerns discussed, and specialist input noted:
+
+
+
+
+ G. MDT DECISION
+
+ ☐ LIST FOR                  ☐ CONDITIONAL               ☐ DEFER —                    ☐ INACTIVE                ☐ DECLINE /
+ TRANSPLANT                  LISTING                     Further Workup               STATUS                    DELIST
+ Proceed to active listing   Conditions must be met      Pending outstanding          Remains listed;           Not suitable for
+                             first                       investigations               suspended                 transplantation
+
+
+
+ If Listed — Transplant Specification
+  Procedure Type                  Side (if SLT)                     Priority / Urgency                  Recipient Size Range
+  ☐ Bilateral (BLT)      ☐        ☐ Right     ☐ Left     ☐          ☐ Standard       ☐ High     ☐       TLC range: ____ to
+  Single (SLT)                    Either                            Urgent                              ____ L
+
+ Special donor considerations / restrictions: ____________________________________________
+
+
+
+ If Conditional / Deferred / Declined — Rationale & Conditions
+
+
+
+ Re-review date / trigger: ____________________________________________
+
+
+
+
+                                   Kuwait Ministry of Health | Confidential | Page 21 of 22
+Chest Diseases Hospital — Lung Transplant Unit                                                  Implementation Protocol v3.0
+
+
+
+
+ H. ACTION ITEMS & FOLLOW-UP
+                 Action Required                                 Responsible Person                  Target Date          Completed
+
+                                                                                                                             ☐
+                                                                                                                             ☐
+                                                                                                                             ☐
+                                                                                                                             ☐
+
+
+ I. NEXT MDT REVIEW
+
+ ☐ 1 Week                  ☐ 1 Month                   ☐ 3 Months                   ☐ 6 Months               ☐ Specific Date:
+
+
+
+
+ J. MDT ATTENDANCE & SIGNATURES
+             MDT Member                             Role / Specialty                 Signature / Initial            Attended?
+ Surgical Director                           Thoracic Surgery                                                      ☐ Present ☐
+                                             (Chair)                                                                 Remote
+ Medical Director                            Transplant Pulmonology                                                ☐ Present ☐
+                                                                                                                     Remote
+ Transplant Coordinator                      Transplant Coordination                                               ☐ Present ☐
+                                                                                                                     Remote
+                                             Pharmacy                                                              ☐ Present ☐
+                                                                                                                     Remote
+                                             Infectious Disease                                                    ☐ Present ☐
+                                                                                                                     Remote
+                                             Transplant                                                            ☐ Present ☐
+                                             Anaesthesiology                                                         Remote
+                                             Social Work / Psychology                                              ☐ Present ☐
+                                                                                                                     Remote
+                                             Additional / Invited                                                  ☐ Present ☐
+                                             Specialist                                                              Remote
+
+
+ K. CHAIRPERSON SIGN-OFF
+ MDT Chair Name (Print)                      Signature                                        Date                 Time
+
+
+
+
+ This form must be filed in the patient's medical record immediately following the MDT meeting. A copy is to be retained in the LTU
+                                                           registry database.
+
+
+
+
+                                   Kuwait Ministry of Health | Confidential | Page 22 of 22
+

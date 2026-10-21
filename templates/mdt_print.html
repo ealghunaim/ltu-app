@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% from "_form.html" import ro_section %}{% block content %}<div class="paper"><p class="noprint"><button class="btn" onclick="window.print()">Print</button></p>
+<h1>Chest Diseases Hospital - Lung Transplant Unit<br>MDT Transplant Decision Form (CDH-LTU-MDT-05)</h1>
+<p><b>{{ m.patient.full_name }}</b> - Civil ID {{ m.patient.civil_id }} - LTU {{ m.patient.ltu_case_no }} - {{ m.patient.age if m.patient.age is not none else '?' }}y {{ m.patient.sex or '' }}<br>MDT date {{ m.mdt_date }} - {{ case_types[m.case_type] }} - Chair {{ m.chair_name or '' }}</p>
+{% for key, title, fields in sections %}{{ ro_section(key, title, fields, state[key]) }}{% endfor %}
+<h3>Decision</h3><p><b>{{ decisions[m.decision] if m.decision else 'Not recorded' }}</b>{% if m.next_review_date %} - next review {{ m.next_review_date }}{% endif %}</p>
+<p>Status: {{ m.status }}{% if m.finalised_at %} ({{ m.finalised_at.strftime('%d %b %Y %H:%M') }}){% endif %}</p></div>{% endblock %}

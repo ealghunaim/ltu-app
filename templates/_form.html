@@ -1,0 +1,18 @@
+{% macro field(key, f, v) %}
+{% set n = key ~ '__' ~ f.name %}
+{% if f.type == 'check' %}<div class="chk {{ 'wide' if f.wide }}"><input type="checkbox" id="{{ n }}" name="{{ n }}" {{ 'checked' if v }}><label for="{{ n }}" style="margin:0">{{ f.label }}</label></div>
+{% elif f.type == 'yesno' %}<div class="{{ 'wide' if f.wide }}"><label>{{ f.label }}</label><div class="yn"><label><input type="radio" name="{{ n }}" value="yes" {{ 'checked' if v=='yes' }}> Yes</label><label><input type="radio" name="{{ n }}" value="no" {{ 'checked' if v=='no' }}> No</label></div></div>
+{% elif f.type == 'multi' %}<div class="{{ 'wide' if f.wide }}"><label>{{ f.label }}</label>{% for val, lab in f.options %}<label class="chk" style="display:inline-flex;margin-right:12px"><input type="checkbox" name="{{ n }}" value="{{ val }}" {{ 'checked' if v and val in v }}> {{ lab }}</label>{% endfor %}</div>
+{% elif f.type == 'select' %}<div class="{{ 'wide' if f.wide }}"><label>{{ f.label }}</label><select name="{{ n }}"><option value="">-</option>{% for val, lab in f.options %}<option value="{{ val }}" {{ 'selected' if v==val }}>{{ lab }}</option>{% endfor %}</select></div>
+{% elif f.type == 'textarea' %}<div class="{{ 'wide' if f.wide }}"><label>{{ f.label }}</label><textarea name="{{ n }}">{{ v or '' }}</textarea></div>
+{% elif f.type == 'number' %}<div><label>{{ f.label }}</label><input type="number" name="{{ n }}" step="{{ f.step or 'any' }}" value="{{ v or '' }}"></div>
+{% elif f.type == 'date' %}<div><label>{{ f.label }}</label><input type="date" name="{{ n }}" value="{{ v or '' }}"></div>
+{% elif f.type == 'datetime' %}<div><label>{{ f.label }}</label><input type="datetime-local" name="{{ n }}" value="{{ v or '' }}"></div>
+{% else %}<div class="{{ 'wide' if f.wide }}"><label>{{ f.label }}</label><input type="text" name="{{ n }}" value="{{ v or '' }}"></div>{% endif %}
+{% endmacro %}
+{% macro section(key, title, fields, values) %}
+<div class="card"><h2>{{ title }}</h2><div class="ff">{% for f in fields %}{{ field(key, f, values.get(f.name)) }}{% endfor %}</div></div>
+{% endmacro %}
+{% macro ro_section(key, title, fields, values) %}
+<h3>{{ title }}</h3><table>{% for f in fields %}{% if values.get(f.name) %}<tr><td style="width:42%">{{ f.label }}</td><td><b>{% if values.get(f.name) is sameas true %}Yes{% else %}{{ values.get(f.name) }}{% endif %}</b></td></tr>{% endif %}{% endfor %}</table>
+{% endmacro %}

@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block content %}<h1>Candidate registry</h1>
+<p><a class="btn sm {{ '' if status=='active' else 'sec' }}" href="?status=active">Active</a> {% for k, l in CANDIDATE_STATUS.items() %}<a class="btn sm {{ '' if status==k else 'sec' }}" href="?status={{ k }}">{{ l }}</a> {% endfor %}<a class="btn sm sec" href="?status=all">All</a></p>
+<div class="card"><table><tr><th>Patient</th><th>LTU no.</th><th>Diagnosis</th><th>Status</th><th>Next review</th></tr>
+{% for c in rows %}<tr><td><a href="{{ url_for('patients.detail', pid=c.patient_id) }}">{{ c.patient.full_name }}</a></td><td>{{ c.patient.ltu_case_no }}</td><td>{{ c.diagnosis or '' }}</td><td><span class="tag t-blue">{{ CANDIDATE_STATUS[c.status] }}</span></td>
+<td>{{ c.next_review_due or '' }}{% if c.next_review_due and c.next_review_due < today %} <span class="tag t-red">overdue</span>{% endif %}</td></tr>{% else %}<tr><td colspan="5" class="muted">None.</td></tr>{% endfor %}</table></div>{% endblock %}
