@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% block content %}<h1>Post-transplant follow-up</h1>
+{% extends "base.html" %}{% block content %}<h1>Post-transplant follow-up <a class="btn sm sec noprint" href="{{ url_for('prints.followup_schedule') }}" target="_blank">Print schedule</a></h1>
 <div class="card"><table><tr><th>Patient</th><th>Months post</th><th>Next scheduled visit</th><th>Last visit</th><th></th></tr>{% for r in rows %}<tr><td><a href="{{ url_for('patients.detail', pid=r.p.id) }}">{{ r.p.full_name }}</a></td><td>{{ r.months }}</td>
 <td>{% if r.next %}{{ r.next.label }} - {{ r.next.due }}{% if r.next.overdue %} <span class="tag t-red">overdue</span>{% endif %}{% else %}<span class="muted">Year-1 complete (annual)</span>{% endif %}</td>
 <td>{% if r.last %}<a href="{{ url_for('followups.view', fid=r.last.id) }}">{{ r.last.visit_date }}</a>{% endif %}</td>

@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% from "_print.html" import head, banner, pr_section, kv, foot, signline with context %}{% block title %}Follow-up schedule{% endblock %}{% block content %}<div class="pp">
+{{ head('Post-Transplant Follow-up Schedule', 'As of ' ~ today) }}
+<table class="pt"><tr><th>Patient</th><th>Civil ID</th><th>Months post</th><th>Next scheduled visit</th><th>Due</th><th>Last visit</th></tr>
+{% for r in rows %}<tr><td>{{ r.p.full_name }}</td><td>{{ r.p.civil_id }}</td><td>{{ r.months }}</td><td>{{ r.next.label if r.next else 'Year-1 complete (annual)' }}</td><td>{{ r.next.due if r.next else '' }}{% if r.next and r.next.overdue %} <b>OVERDUE</b>{% endif %}</td><td>{{ r.last.visit_date if r.last else '' }}</td></tr>{% else %}<tr><td colspan="6">None</td></tr>{% endfor %}</table>
+{{ foot() }}</div>{% endblock %}

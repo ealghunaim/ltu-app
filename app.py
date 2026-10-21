@@ -35,7 +35,8 @@ def create_app(config=None):
     from episodes import episodes_bp
     from followups import followups_bp
     from protocols import protocols_bp
-    for bp in (auth_bp, main_bp, patients_bp, referrals_bp, mdt_bp, episodes_bp, followups_bp, protocols_bp):
+    from prints import prints_bp
+    for bp in (auth_bp, main_bp, patients_bp, referrals_bp, mdt_bp, episodes_bp, followups_bp, protocols_bp, prints_bp):
         app.register_blueprint(bp)
 
     @app.before_request

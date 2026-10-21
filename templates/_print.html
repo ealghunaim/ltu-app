@@ -1,0 +1,45 @@
+{# Shared print macros. Every print page: {% from "_print.html" import head, banner, pr_section, foot %} #}
+{% macro head(title, subtitle='') %}
+<div class="ph">
+  <div class="ph-logo">{% if has_ltu_logo %}<img src="{{ url_for('static', filename='images/ltu_logo.png') }}" alt="">{% endif %}</div>
+  <div class="ph-title"><div class="ph-l1">Ministry of Health &middot; Chest Diseases Hospital</div><div class="ph-l2">Lung Transplant Unit</div>
+    <div class="ph-l3">{{ title }}</div>{% if subtitle %}<div class="ph-l4">{{ subtitle }}</div>{% endif %}</div>
+  <div class="ph-logo">{% if has_thoracic_logo %}<img src="{{ url_for('static', filename='images/thoracic_logo.jpg') }}" alt="">{% endif %}</div>
+</div>
+<p class="noprint" style="text-align:center"><button class="btn" onclick="window.print()">Print</button></p>
+{% endmacro %}
+
+{% macro banner(p) %}
+<table class="pb"><tr>
+  <td><span>Patient</span><b>{{ p.full_name }}</b></td><td><span>Civil ID</span><b>{{ p.civil_id }}</b></td>
+  <td><span>LTU case no.</span><b>{{ p.ltu_case_no or '-' }}</b></td><td><span>File no.</span><b>{{ p.file_number or '-' }}</b></td></tr><tr>
+  <td><span>Age / Sex</span><b>{{ p.age if p.age is not none else '-' }} / {{ p.sex or '-' }}</b></td><td><span>DOB</span><b>{{ p.date_of_birth or '-' }}</b></td>
+  <td><span>Blood group</span><b>{{ p.blood_group or '-' }}</b></td><td><span>Phone</span><b>{{ p.phone or '-' }}</b></td></tr></table>
+{% endmacro %}
+
+{# Filled fields only; a section made only of tick-boxes prints as a checklist (all items, with boxes). #}
+{% macro pr_section(title, fields, values) %}
+{% set ns = namespace(items=[], all_check=true) %}
+{% for f in fields %}
+  {% if f.type != 'check' %}{% set ns.all_check = false %}{% endif %}
+  {% set txt = pv(f, values.get(f.name)) %}
+  {% if txt %}{% set ns.items = ns.items + [(f, txt)] %}{% endif %}
+{% endfor %}
+{% if ns.all_check and fields %}
+<h3 class="ps">{{ title }}</h3>
+<table class="pt chk">{% for f in fields %}<tr><td class="bx">{{ '&#9745;'|safe if values.get(f.name) else '&#9744;'|safe }}</td><td>{{ f.label }}</td></tr>{% endfor %}</table>
+{% elif ns.items %}
+<h3 class="ps">{{ title }}</h3>
+<table class="pt">{% for f, txt in ns.items %}{% if f.type == 'textarea' or f.wide %}<tr><td class="lb">{{ f.label }}</td><td style="white-space:pre-wrap">{{ txt }}</td></tr>{% else %}<tr><td class="lb">{{ f.label }}</td><td>{{ txt }}</td></tr>{% endif %}{% endfor %}</table>
+{% endif %}
+{% endmacro %}
+
+{% macro kv(rows) %}
+<table class="pt">{% for k, v in rows %}{% if v not in (none, '') %}<tr><td class="lb">{{ k }}</td><td>{{ v }}</td></tr>{% endif %}{% endfor %}</table>
+{% endmacro %}
+
+{% macro foot() %}
+<div class="pf">Confidential patient information &mdash; printed {{ printed_at.strftime('%d %b %Y %H:%M') }} by {{ current_user.full_name }} &middot; CDH Lung Transplant Unit</div>
+{% endmacro %}
+
+{% macro signline(label) %}<div class="sig"><div class="sigl"></div>{{ label }}</div>{% endmacro %}

@@ -1,5 +1,5 @@
 {% extends "base.html" %}{% from "_form.html" import section %}{% block content %}
-<h1>Transplant episode - <a href="{{ url_for('patients.detail', pid=e.patient_id) }}">{{ e.patient.full_name }}</a></h1>
+<h1>Transplant episode - <a href="{{ url_for('patients.detail', pid=e.patient_id) }}">{{ e.patient.full_name }}</a> <a class="btn sm sec noprint" href="{{ url_for('prints.episode', eid=e.id) }}" target="_blank">Print record</a></h1>
 <div class="card noprint"><div style="display:flex;gap:6px;flex-wrap:wrap">{% for k, l in stages %}<span class="tag {{ 't-purple' if loop.index0==stage_idx else ('t-green' if loop.index0<stage_idx else 't-gray') }}">{{ l }}</span>{% endfor %}{% if e.stage=='cancelled' %}<span class="tag t-red">Cancelled</span>{% endif %}</div>
 <form method="post" action="{{ url_for('episodes.stage', eid=e.id) }}" style="margin-top:8px"><select name="stage" style="width:auto">{% for k, l in stages %}<option value="{{ k }}" {{ 'selected' if e.stage==k }}>{{ l }}</option>{% endfor %}<option value="cancelled">Cancel episode</option></select> <button class="btn sm">Move to stage</button></form></div>
 {% if worst_pgd is not none and worst_pgd >= 2 %}<div class="redbox">PGD grade {{ worst_pgd }}: {{ pgd_text[worst_pgd] }}</div>{% endif %}

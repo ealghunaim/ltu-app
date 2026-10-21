@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% from "_print.html" import head, banner, pr_section, kv, foot, signline with context %}{% block title %}Referral{% endblock %}{% block content %}<div class="pp">
+{{ head('Lung Transplant Referral', 'Referred ' ~ r.referral_date) }}{{ banner(p) }}
+{{ kv([('Referring institution', r.institution), ('Referring physician', r.referring_physician), ('Referral date', r.referral_date), ('Status', REFERRAL_STATUS[r.status]), ('Primary diagnosis', r.primary_diagnosis)]) }}
+<h3 class="ps">Reason for referral / question for the MDT</h3><div style="white-space:pre-wrap;border:1px solid #bbb;padding:6px 8px">{{ r.reason }}</div>
+{% for key, title, fields in sections %}{{ pr_section(title, fields, data) }}{% endfor %}
+{% if mdt %}<h3 class="ps">MDT decision</h3>
+<table class="pt"><tr><td class="lb">Decision</td><td><b>{{ DECISIONS[mdt.decision] }}</b></td></tr><tr><td class="lb">Chair</td><td>{{ mdt.chair_name }}</td></tr>{% if mdt.next_review_date %}<tr><td class="lb">Next review</td><td>{{ mdt.next_review_date }}</td></tr>{% endif %}</table>{% endif %}
+{{ foot() }}</div>{% endblock %}

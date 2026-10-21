@@ -133,6 +133,22 @@ with app.app_context(): fid = FollowUp.query.first().id
 check("followup view", team.get(f"/followups/{fid}").status_code == 200)
 check("patient detail w/ charts", b"<svg" in team.get(f"/patients/{pid}").data)
 
+# --- print views
+for u, name in [(f"/print/patient/{pid}", "patient"), (f"/print/referral/{rid}", "referral"), (f"/print/episode/{eid}", "episode"), (f"/print/followup/{fid}", "followup"),
+                ("/print/waitlist", "waitlist"), ("/print/waitlist?status=all", "waitlist all"), ("/print/followups", "followup schedule"), (f"/print/mdt-agenda?date={date.today().isoformat()}", "mdt agenda")]:
+    r = team.get(u); check("print " + name + " renders", r.status_code == 200 and b"Lung Transplant Unit" in r.data and b"Confidential patient information" in r.data)
+check("print patient has data", b"Test Patient" in team.get(f"/print/patient/{pid}").data and b"290010100001" in team.get(f"/print/patient/{pid}").data)
+check("print episode shows PGD + CIT", b"7.5 h" in team.get(f"/print/episode/{eid}").data and b"ISHLT" in team.get(f"/print/episode/{eid}").data)
+check("print followup flags out-of-range tac", b"OUT OF RANGE" in team.get(f"/print/followup/{fid}").data)
+check("referrer can print own referral", ref.get(f"/print/referral/{rid}").status_code == 200)
+check("other referrer cannot print it", o.get(f"/print/referral/{rid}").status_code == 403)
+check("referrer cannot print patient/episode/waitlist", all(ref.get(u).status_code == 403 for u in (f"/print/patient/{pid}", f"/print/episode/{eid}", "/print/waitlist")))
+check("print buttons on pages", b"Print summary" in team.get(f"/patients/{pid}").data and b"Print record" in team.get(f"/episodes/{eid}").data and b"Print list" in team.get("/candidates").data
+      and b"Print schedule" in team.get("/followups").data and b"Print agenda" in team.get("/mdt").data and b"Print visit" in team.get(f"/followups/{fid}").data and b"Print referral" in team.get(f"/referrals/{rid}").data)
+with app.app_context():
+    from models import AuditLog
+    check("prints are audit-logged", AuditLog.query.filter(AuditLog.action.like("%_printed")).count() >= 7)
+
 # --- misc
 check("protocol search", b"CDH-LTU" in team.get("/protocols?q=tacrolimus").data)
 check("protocol pdf", team.get("/protocols/CDH-LTU-IMPL-01/pdf").status_code == 200)

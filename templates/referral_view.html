@@ -6,6 +6,7 @@
 {% for key, title, fields in sections %}{{ ro_section(key, title, fields, data) }}{% endfor %}</div>
 {% if mdt %}<div class="card"><h2>MDT decision</h2><p><span class="tag t-blue">{{ DECISIONS[mdt.decision] }}</span> MDT {{ mdt.mdt_date }} - chair {{ mdt.chair_name }}</p>
 <a class="btn sec" href="{{ url_for('referrals.letter', rid=r.id) }}" target="_blank">Printable decision letter</a></div>{% endif %}
+<p class="noprint"><a class="btn sm sec" href="{{ url_for('prints.referral', rid=r.id) }}" target="_blank">Print referral</a></p>
 {% if current_user.is_team %}<div class="card noprint"><h2>Actions</h2>
 <form method="post" action="{{ url_for('referrals.status', rid=r.id) }}" style="display:inline"><select name="status" style="width:auto">{% for k, l in REFERRAL_STATUS.items() %}<option value="{{ k }}" {{ 'selected' if r.status==k }}>{{ l }}</option>{% endfor %}</select> <button class="btn sm sec">Set status</button></form>
 <a class="btn sm" href="{{ url_for('mdt.new', patient_id=r.patient_id, referral_id=r.id) }}">Present at MDT</a>

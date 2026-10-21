@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% from "_print.html" import head, banner, pr_section, kv, foot, signline with context %}{% block title %}Waitlist{% endblock %}{% block content %}<div class="pp">
+{{ head('Transplant Candidate Registry', ('All statuses' if status=='all' else ('Active candidates' if status=='active' else CANDIDATE_STATUS[status]))) }}
+<table class="pt"><tr><th>#</th><th>Patient</th><th>Civil ID</th><th>Age/Sex</th><th>Diagnosis</th><th>Status</th><th>Procedure</th><th>Priority</th><th>Listed</th><th>Next review</th></tr>
+{% for c in rows %}<tr><td>{{ loop.index }}</td><td>{{ c.patient.full_name }}<br><small>{{ c.patient.ltu_case_no }}</small></td><td>{{ c.patient.civil_id }}</td><td>{{ c.patient.age if c.patient.age is not none else '' }} {{ (c.patient.sex or '')[:1] }}</td><td>{{ c.diagnosis or '' }}</td>
+<td>{{ CANDIDATE_STATUS[c.status] }}</td><td>{{ c.procedure_type or '' }}{% if c.side %} {{ c.side }}{% endif %}</td><td>{{ c.priority or '' }}</td><td>{{ c.listing_date or '' }}</td><td>{{ c.next_review_due or '' }}</td></tr>{% else %}<tr><td colspan="10">None</td></tr>{% endfor %}</table>
+<p>Total: <b>{{ rows|length }}</b></p>{{ foot() }}</div>{% endblock %}

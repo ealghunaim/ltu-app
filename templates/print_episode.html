@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% from "_print.html" import head, banner, pr_section, kv, foot, signline with context %}{% block title %}Transplant episode{% endblock %}{% block content %}<div class="pp">
+{{ head('Transplant Episode Record', (e.transplant_date|string if e.transplant_date else 'Organ offer ' ~ (e.offer_at.strftime('%d %b %Y') if e.offer_at else ''))) }}{{ banner(p) }}
+{{ kv([('Current stage', stages.get(e.stage, e.stage)), ('Procedure', procedures.get(e.procedure, '')), ('Offer decision', e.offer_decision), ('Transplant date', e.transplant_date),
+ ('Cross-clamp', e.cross_clamp_at.strftime('%d %b %Y %H:%M') if e.cross_clamp_at else ''), ('Reperfusion', e.reperfusion_at.strftime('%d %b %Y %H:%M') if e.reperfusion_at else ''),
+ ('Cold ischaemic time', (e.cold_ischaemic_hours|string ~ ' h') if e.cold_ischaemic_hours is not none else ''), ('CMV donor / recipient', (e.donor_cmv or '?') ~ ' / ' ~ (e.recipient_cmv or '?')), ('Discharge date', e.discharge_date)]) }}
+{% for title, secs in blocks %}{% for key, stitle, fields, vals in secs %}{{ pr_section(title ~ ' - ' ~ stitle, fields, vals) }}{% endfor %}{% endfor %}
+<h3 class="ps">Primary graft dysfunction (ISHLT)</h3><table class="pt"><tr><th>Time</th><th>PaO2</th><th>FiO2</th><th>P/F</th><th>Infiltrates</th><th>ECMO</th><th>Grade</th></tr>
+{% for a in e.pgd %}<tr><td>T{{ a.hours }}</td><td>{{ a.pao2 or '' }}</td><td>{{ a.fio2 or '' }}</td><td>{{ a.pf_ratio or '' }}</td><td>{{ 'Yes' if a.infiltrates else 'No' }}</td><td>{{ 'Yes' if a.on_ecmo else 'No' }}</td><td><b>{{ a.grade if a.grade is not none else '-' }}</b></td></tr>{% else %}<tr><td colspan="7">None recorded</td></tr>{% endfor %}</table>
+<h3 class="ps">Tacrolimus troughs (target {{ target[0] }}-{{ target[1] }} ng/mL)</h3><table class="pt"><tr><th>Drawn</th><th>Drug</th><th>Level</th><th></th></tr>
+{% for t in troughs %}<tr><td>{{ t.drawn_at.strftime('%d %b %H:%M') }}</td><td>{{ t.drug }}</td><td>{{ t.value }}</td><td>{% if t.drug=='tacrolimus' and not (target[0] <= t.value <= target[1]) %}out of range{% endif %}</td></tr>{% else %}<tr><td colspan="4">None recorded</td></tr>{% endfor %}</table>
+<p>Discharge criteria met: <b>{{ gate_done }} / {{ gate_total }}</b></p>
+{{ signline('Transplant physician') }}{{ signline('Transplant surgeon') }}{{ signline('Coordinator') }}
+{{ foot() }}</div>{% endblock %}

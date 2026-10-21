@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% from "_print.html" import head, banner, pr_section, kv, foot, signline with context %}{% block title %}MDT agenda{% endblock %}{% block content %}<div class="pp">
+{{ head('Weekly MDT Agenda', d.strftime('%A %d %B %Y') ~ ' - 08:00 - LTU Conference Room') }}
+<table class="pt"><tr><th>#</th><th>Patient</th><th>Age/Sex</th><th>Diagnosis</th><th>Case type</th><th>Source</th><th>Decision</th><th>Notes</th></tr>
+{% for m in cases %}{% set s = m.get_data('summary') %}<tr><td>{{ loop.index }}</td><td>{{ m.patient.full_name }}<br><small>{{ m.patient.civil_id }}</small></td><td>{{ m.patient.age if m.patient.age is not none else '' }} {{ (m.patient.sex or '')[:1] }}</td>
+<td>{{ s.get('primary_diagnosis') or '' }}</td><td>{{ case_types[m.case_type] }}</td><td>{{ m.referral.institution if m.referral else 'Waitlist' }}</td><td>{{ decisions[m.decision] if m.decision else '' }}{% if m.status=='final' %} <small>(final)</small>{% endif %}</td><td style="min-width:90px"></td></tr>
+{% else %}<tr><td colspan="8">No cases scheduled for this date.</td></tr>{% endfor %}</table>
+{{ signline('Chair') }}{{ signline('Coordinator') }}{{ signline('Recorder') }}
+{{ foot() }}</div>{% endblock %}

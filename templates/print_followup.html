@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% from "_print.html" import head, banner, pr_section, kv, foot, signline with context %}{% block title %}Follow-up visit{% endblock %}{% block content %}<div class="pp">
+{{ head('Post-Transplant Follow-up Visit', VISIT_TYPES.get(fu.visit_type, fu.visit_type) ~ ' - ' ~ fu.visit_date) }}{{ banner(p) }}
+{{ kv([('Transplant date', ep.transplant_date if ep else ''), ('Months post-transplant', months), ('Visit date', fu.visit_date), ('Visit type', VISIT_TYPES.get(fu.visit_type, fu.visit_type))]) }}
+<h3 class="ps">Key measurements</h3><table class="pt"><tr><th>FEV1 (L)</th><th>FEV1 % pred</th><th>FVC (L)</th><th>Tacrolimus trough (ng/mL)</th><th>Creatinine</th><th>Next visit</th></tr>
+<tr><td>{{ fu.fev1_l if fu.fev1_l is not none else '' }}</td><td>{{ fu.fev1_pct if fu.fev1_pct is not none else '' }}</td><td>{{ fu.fvc_l if fu.fvc_l is not none else '' }}</td>
+<td>{{ fu.tacrolimus if fu.tacrolimus is not none else '' }}{% if tgt and fu.tacrolimus is not none %} <small>(target {{ tgt[0] }}-{{ tgt[1] }}{% if not (tgt[0] <= fu.tacrolimus <= tgt[1]) %}, OUT OF RANGE{% endif %})</small>{% endif %}</td>
+<td>{{ fu.creatinine if fu.creatinine is not none else '' }}</td><td>{{ fu.next_visit_date or '' }}</td></tr></table>
+{% for key, title, fields, vals in sections %}{{ pr_section(title, fields, vals) }}{% endfor %}
+{{ signline('Clinician') }}{{ signline('Coordinator') }}
+{{ foot() }}</div>{% endblock %}

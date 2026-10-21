@@ -6,7 +6,8 @@
 <p class="noprint"><a class="btn sm" href="{{ url_for('referrals.new') }}">+ Referral</a>
 <a class="btn sm" href="{{ url_for('mdt.new', patient_id=p.id, case_type='waitlist_review') }}">+ MDT review</a>
 <form method="post" action="{{ url_for('episodes.new') }}" style="display:inline"><input type="hidden" name="patient_id" value="{{ p.id }}"><button class="btn sm">Start transplant episode</button></form>
-<a class="btn sm" href="{{ url_for('followups.new', pid=p.id) }}">+ Follow-up visit</a></p>
+<a class="btn sm" href="{{ url_for('followups.new', pid=p.id) }}">+ Follow-up visit</a>
+<a class="btn sm sec" href="{{ url_for('prints.patient', pid=p.id) }}" target="_blank">Print summary</a></p>
 <div class="grid g2">
 <div class="card"><h2>Candidate</h2>{% if cand %}<p>Status: <b>{{ CANDIDATE_STATUS[cand.status] }}</b>{% if cand.diagnosis %} - {{ cand.diagnosis }}{% endif %}</p><p>Next review: {{ cand.next_review_due or '-' }}</p>
 {% if current_user.can_decide %}<form method="post" action="{{ url_for('main.candidate_status', cid=cand.id) }}"><select name="status" style="width:auto">{% for k, l in CANDIDATE_STATUS.items() %}<option value="{{ k }}" {{ 'selected' if cand.status==k }}>{{ l }}</option>{% endfor %}</select> <input name="reason" placeholder="Reason" style="width:50%;display:inline-block"> <button class="btn sm sec">Change</button></form>{% endif %}
