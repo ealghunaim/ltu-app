@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 from flask_login import current_user
 
 from models import (db, Patient, Referral, MDTCase, Candidate, Episode, FollowUp, TroughLevel, REFERRAL_STATUS)
-from core import team_required, audit, next_case_no, parse_date, ensure_candidate
+from core import team_required, audit, next_case_no, parse_date, ensure_candidate, portal_alerts
 from schemas import months_since, tac_target, fev1_drop_pct
 from charts import line_chart
 
@@ -117,7 +117,7 @@ def detail(pid):
     tr_pts = [(t.drawn_at.strftime("%d/%m"), t.value) for t in troughs[-24:]]
     last_months = months_since(tx.transplant_date, troughs[-1].drawn_at.date()) if (tx and troughs) else None
     return render_template(
-        "patient_detail.html", p=p, tx=tx, referrals=Referral.query.filter_by(patient_id=p.id).order_by(Referral.created_at.desc()).all(),
+        "patient_detail.html", p=p, tx=tx, alerts=portal_alerts(p.civil_id), referrals=Referral.query.filter_by(patient_id=p.id).order_by(Referral.created_at.desc()).all(),
         mdts=MDTCase.query.filter_by(patient_id=p.id).order_by(MDTCase.mdt_date.desc()).all(), episodes=sorted(p.episodes, key=lambda e: e.created_at, reverse=True),
         followups=list(reversed(fus)), cand=p.candidate, troughs=list(reversed(troughs[-15:])),
         fev_chart=line_chart(fev_pts, unit=" L", title="FEV1 (L)"), tac_chart=line_chart(tr_pts, band=tac_target(last_months), unit=" ng/mL", title="Tacrolimus trough", color="#7a3e9d"),

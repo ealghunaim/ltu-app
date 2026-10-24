@@ -2,7 +2,7 @@
 import os, sys, tempfile, re
 from datetime import date, timedelta
 _db = tempfile.mktemp(suffix=".db")
-os.environ.update(DATABASE_URL="sqlite:///" + _db, LTU_ADMIN_PASSWORD="Admin#12345", LTU_ADMIN_EMAIL="admin@x.org", SECRET_KEY="k", SESSION_IDLE_MINUTES="15")
+os.environ.update(DATABASE_URL="sqlite:///" + _db, LTU_ADMIN_PASSWORD="Admin#12345", LTU_ADMIN_EMAIL="admin@x.org", SECRET_KEY="k", SESSION_IDLE_MINUTES="15", PORTAL_SSO_SECRET="sharedsecret", MAIN_APP_URL="https://main.example.com")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from app import create_app
 from models import db, Patient, Referral, MDTCase, Candidate, Episode, FollowUp, User, PGDAssessment
@@ -157,6 +157,43 @@ check("lookup unknown (no main app)", team.get("/patients/lookup?civil_id=999").
 check("anon redirected", client().get("/candidates").status_code in (302, 401))
 check("referrer lookup blocked for unknown", ref.get("/patients/lookup?civil_id=999").json["found"] is False)
 check("audit visible to admin", admin.get("/audit").status_code == 200)
+
+# --- round 2 (2026-10-24): SSO, Today board, status API, cross-portal alerts
+from itsdangerous import URLSafeTimedSerializer
+from unittest import mock
+ser = URLSafeTimedSerializer("sharedsecret", salt="portal-sso")
+def tok(**kw):
+    d = {"email": "sso@x.org", "name": "Dr Sso", "phone": "55", "hospital": "Mubarak", "role": "referring", "portal": "ltu", "next": ""}
+    d.update(kw); return ser.dumps(d)
+s1 = client(); r = s1.get("/sso?token=" + tok())
+check("sso referring login", r.status_code == 302 and b"Submit a referral" in s1.get("/").data)
+with app.app_context(): u = User.query.filter_by(email="sso@x.org").first(); check("sso user approved referring", u.role == "referring" and u.status == "approved" and u.hospital == "Mubarak")
+s2 = client(); s2.get("/sso?token=" + tok(email="ts@x.org", name="Dr TS", role="transplant_surgeon"))
+check("sso surgeon is team", s2.get("/candidates").status_code == 200 and s2.get("/today").status_code == 200)
+check("sso bad token", client().get("/sso?token=bad").status_code == 302)
+check("sso wrong portal", client().get("/sso?token=" + tok(portal="adan")).status_code == 400)
+with app.app_context(): before = User.query.filter_by(role="admin").first().role
+s3 = client(); s3.get("/sso?token=" + tok(email="admin@x.org", role="referring"))
+with app.app_context(): check("sso never downgrades native admin", User.query.filter_by(email="admin@x.org").first().role == "admin")
+check("sso open redirect blocked", "evil.com" not in client().get("/sso?token=" + tok(email="e@x.org", next="//evil.com")).headers["Location"])
+check("today board renders", b"Today board" in team.get("/today").data)
+r = team.get("/today/print"); check("today print", r.status_code == 200 and b"handover" in r.data.lower())
+check("today blocked for referrer", ref.get("/today").status_code == 403)
+check("status api needs key", client().get("/api/main/patient-status?civil_id=290010100001").status_code == 403)
+with app.app_context():
+    _p = Patient(civil_id="291111111111", full_name="Active Pt"); db.session.add(_p); db.session.flush()
+    db.session.add(Candidate(patient_id=_p.id, status="listed", diagnosis="IPF")); db.session.add(Referral(patient_id=_p.id, status="new", primary_diagnosis="IPF")); db.session.commit()
+j = client().get("/api/main/patient-status?civil_id=291111111111", headers={"X-Portal-Key": "sharedsecret"}).json
+check("status api reports candidate + referral " + str(j), j["found"] and len(j["items"]) == 2 and j["items"][0]["status"] == "Active - listed")
+check("status api unknown", client().get("/api/main/patient-status?civil_id=000", headers={"X-Portal-Key": "sharedsecret"}).json == {"found": False, "items": []})
+class _R:
+    status_code = 200
+    def json(s): return {"items": [{"portal": "adan", "label": "Al-Adan Respirology consult AC-1", "status": "Waiting", "detail": "Effusion"}]}
+with mock.patch("requests.get", return_value=_R()) as g:
+    with app.app_context(): pid = Patient.query.filter_by(civil_id="290010100001").first().id
+    html = team.get(f"/patients/{pid}").data
+    check("alert banner on patient page", b"already active elsewhere" in html and b"Al-Adan Respirology" in html)
+    check("alert excludes ltu + key", g.call_args.kwargs["params"]["exclude"] == "ltu" and g.call_args.kwargs["headers"] == {"X-Portal-Key": "sharedsecret"})
 # idle logout
 with team.session_transaction() as s: s["last_active"] = 0
 r = team.get("/candidates"); check("idle logout", r.status_code in (302, 401))

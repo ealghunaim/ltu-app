@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_form.html" import ro_section %}{% block content %}
+{% extends "base.html" %}{% from "_form.html" import ro_section %}{% block content %}{% include "_alerts.html" %}
 <h1>Referral - {{ r.patient.full_name }}</h1>
 <p><span class="tag {{ 't-green' if r.status=='decided' else 't-amber' }}">{{ REFERRAL_STATUS[r.status] }}</span> <span class="muted">{{ r.institution }} - {{ r.referring_physician }} - {{ r.referral_date }}</span></p>
 <div class="card"><h2>Patient</h2>{{ r.patient.full_name }} - Civil ID {{ r.patient.civil_id }}{% if r.patient.age is not none %} - {{ r.patient.age }}y{% endif %} {{ r.patient.sex or '' }} {% if current_user.is_team %}<a class="btn sm sec" href="{{ url_for('patients.detail', pid=r.patient_id) }}">Open patient file</a>{% endif %}

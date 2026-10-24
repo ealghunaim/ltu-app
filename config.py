@@ -28,3 +28,4 @@ class Config:
     MAIN_APP_LTU_KEY = os.environ.get("MAIN_APP_LTU_KEY", "")
     LTU_ADMIN_EMAIL = os.environ.get("LTU_ADMIN_EMAIL", "admin@example.com")
     LTU_ADMIN_PASSWORD = os.environ.get("LTU_ADMIN_PASSWORD", "")
+    PORTAL_SSO_SECRET = os.environ.get("PORTAL_SSO_SECRET", "")  # same value in the main app and the Al-Adan app

@@ -4,7 +4,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 from flask_login import login_required, current_user
 
 from models import db, Referral, Patient, MDTCase, REFERRAL_STATUS, DECISIONS
-from core import team_required, audit, parse_date, ensure_candidate
+from core import team_required, audit, parse_date, ensure_candidate, portal_alerts
 from patients import get_or_create_patient
 from schemas import REFERRAL_CLINICAL, parse_section
 
@@ -70,7 +70,8 @@ def view(rid):
     if current_user.is_team:
         audit("referral_viewed", r.patient_id, f"referral {r.id}")
         db.session.commit()
-    return render_template("referral_view.html", r=r, mdt=show_decision, sections=REFERRAL_CLINICAL, data=r.get_data("clinical"))
+    return render_template("referral_view.html", r=r, mdt=show_decision, sections=REFERRAL_CLINICAL, data=r.get_data("clinical"),
+                           alerts=portal_alerts(r.patient.civil_id) if current_user.is_team else [])
 
 
 @referrals_bp.route("/<int:rid>/status", methods=["POST"])

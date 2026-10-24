@@ -78,3 +78,18 @@ def ensure_candidate(patient, status="evaluation", diagnosis=None):
         db.session.add(c)
         db.session.flush()
     return c
+
+
+def portal_alerts(civil_id):
+    """Activity for this Civil ID in the main (Thoracic) app and the Al-Adan portal, for the warning banner. Best effort."""
+    import requests
+    from flask import current_app
+    base, key = current_app.config.get("MAIN_APP_URL"), current_app.config.get("PORTAL_SSO_SECRET")
+    if not (base and key and civil_id):
+        return []
+    try:
+        r = requests.get(base + "/api/portal/patient-activity", params={"civil_id": civil_id, "exclude": "ltu"},
+                         headers={"X-Portal-Key": key}, timeout=3)
+        return r.json().get("items", []) if r.status_code == 200 else []
+    except (requests.RequestException, ValueError):
+        return []

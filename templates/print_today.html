@@ -1,0 +1,11 @@
+{% from "_print.html" import head, foot with context %}<!doctype html><html lang="en"><head><meta charset="utf-8"><title>LTU handover</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"></head><body><div class="pp">
+{{ head("Daily handover - " ~ today.strftime('%A %d-%b-%Y'), "Next MDT: Monday " ~ next_mdt.strftime('%d-%b-%Y') ~ " 08:00") }}
+<h3 class="ps">MDT this Monday ({{ mdt_cases|length }})</h3><table class="pt">{% for m in mdt_cases %}<tr><td>{{ m.patient.full_name }} ({{ m.patient.civil_id }})</td><td>{{ CASE_TYPES[m.case_type] }}</td><td>{{ m.status }}</td></tr>{% else %}<tr><td>None scheduled</td></tr>{% endfor %}</table>
+<h3 class="ps">Open episodes / organ offers ({{ open_eps|length }})</h3><table class="pt">{% for e in open_eps %}<tr><td>{{ e.patient.full_name }}</td><td>{{ e.stage }}</td></tr>{% else %}<tr><td>None</td></tr>{% endfor %}</table>
+<h3 class="ps">New referrals ({{ new_refs|length }})</h3><table class="pt">{% for r in new_refs %}<tr><td>{{ r.patient.full_name }}</td><td>{{ r.primary_diagnosis }}</td><td>{{ r.institution }}</td></tr>{% else %}<tr><td>None</td></tr>{% endfor %}</table>
+<h3 class="ps">Listing reviews due - 14 days ({{ due_review|length }})</h3><table class="pt">{% for c in due_review %}<tr><td>{{ c.patient.full_name }}</td><td>{{ CANDIDATE_STATUS[c.status] }}</td><td>due {{ c.next_review_due }}</td></tr>{% else %}<tr><td>None</td></tr>{% endfor %}</table>
+<h3 class="ps">Post-transplant visits due ({{ due_followups|length }})</h3><table class="pt">{% for f in due_followups %}<tr><td>{{ f.patient.full_name }}</td><td>{{ f.next_visit_date }}</td></tr>{% else %}<tr><td>None</td></tr>{% endfor %}</table>
+<h3 class="ps">Waitlist - listed / conditional ({{ listed|length }})</h3><table class="pt">{% for c in listed %}<tr><td>{{ c.patient.full_name }}</td><td>{{ c.diagnosis or '' }}</td></tr>{% else %}<tr><td>None</td></tr>{% endfor %}</table>
+<div class="sig"><div>Handed over by</div><div>Received by</div></div>
+{{ foot() }}</div></body></html>

@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% block content %}
+{% extends "base.html" %}{% block content %}{% include "_alerts.html" %}
 <h1>{{ p.full_name }} <span class="muted" style="font-size:.6em">{{ p.ltu_case_no }}</span></h1>
 <p class="muted">Civil ID {{ p.civil_id }} - {{ p.age if p.age is not none else '?' }}y {{ p.sex or '' }} {% if p.nationality %}- {{ p.nationality }}{% endif %} {% if p.phone %}- {{ p.phone }}{% endif %} {% if p.blood_group %}- {{ p.blood_group }}{% endif %}
 {% if cand %} - <span class="tag t-blue">{{ CANDIDATE_STATUS[cand.status] }}</span>{% endif %}{% if tx %} - <span class="tag t-purple">Transplanted {{ tx.transplant_date }}{% if months_post is not none %} ({{ months_post }} mo){% endif %}</span>{% endif %}</p>
